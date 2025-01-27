@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_K3wFIFfoEeyLJ4_mHRBt1A" confirmationNeeded="false" name="default">
+  <contextParameter xmi:id="_K3wFIVfoEeyLJ4_mHRBt1A" comment="contains files to read" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="in/"/>
+  <contextParameter xmi:id="_K3wFIlfoEeyLJ4_mHRBt1A" comment="" name="dataFile" prompt="dataFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="data.csv"/>
+  <contextParameter xmi:id="_K3wFI1foEeyLJ4_mHRBt1A" comment="" name="tmpFile" prompt="tmpFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="file.tmp"/>
+  <contextParameter xmi:id="_K3wFJFfoEeyLJ4_mHRBt1A" comment="contains files writtten from Talend" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="out/"/>
+  <contextParameter xmi:id="_K3wFJVfoEeyLJ4_mHRBt1A" comment="contains temporary files" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tmp/"/>
+  <contextParameter xmi:id="_K3wFJlfoEeyLJ4_mHRBt1A" comment="" name="paramFile" prompt="paramFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prePostJob_talend.properties"/>
+  <contextParameter xmi:id="_K3wFJ1foEeyLJ4_mHRBt1A" comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="params/"/>
+  <contextParameter xmi:id="_K3wFKFfoEeyLJ4_mHRBt1A" comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="central"/>
+  <contextParameter xmi:id="_K3wFKVfoEeyLJ4_mHRBt1A" comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="logs/"/>
+  <contextParameter xmi:id="_K3wFKlfoEeyLJ4_mHRBt1A" comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Talend/data/"/>
+</talendfile:ContextType>

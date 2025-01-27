@@ -1,0 +1,17 @@
+poms/
+temp/
+code/routines/system/
+sqlPatterns/
+.settings
+.project
+talend.project
+.JETmitters/
+.metadata/
+TDQ_Libraries/
+pom.xml
+
+
+#by kfouri
+*.screenshot
+# *.properties
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Ml5fwHNsEeugev9CJJ6Szw" name="repository.metadataGenericSchema" dataPackage="_Ml5fwXNsEeugev9CJJ6Szw"/>
+  <TalendMetadata:GenericPackage xmi:id="_Ml5fwXNsEeugev9CJJ6Szw" name="repository.metadataGenericSchema" dataManager="_Ml5fwHNsEeugev9CJJ6Szw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Ml5fwnNsEeugev9CJJ6Szw" id="_FK_0cHNsEeugev9CJJ6Szw" label="jsonBikeSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ml5fw3NsEeugev9CJJ6Szw" name="store" label="store" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ml5fxHNsEeugev9CJJ6Szw" name="type" label="type" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ml5fxXNsEeugev9CJJ6Szw" name="color" label="color" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Ml5fxnNsEeugev9CJJ6Szw" name="price" label="price" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

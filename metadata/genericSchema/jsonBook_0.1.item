@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_BzBzEXNsEeugev9CJJ6Szw" name="repository.metadataGenericSchema" dataPackage="_BzBzEnNsEeugev9CJJ6Szw"/>
+  <TalendMetadata:GenericPackage xmi:id="_BzBzEnNsEeugev9CJJ6Szw" name="repository.metadataGenericSchema" dataManager="_BzBzEXNsEeugev9CJJ6Szw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_BzBzE3NsEeugev9CJJ6Szw" id="_7dGy0HNrEeugev9CJJ6Szw" label="jsonBookSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BzBzFHNsEeugev9CJJ6Szw" name="category" label="category" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BzBzFXNsEeugev9CJJ6Szw" name="title" label="title" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BzBzFnNsEeugev9CJJ6Szw" name="author" label="author" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_BzBzF3NsEeugev9CJJ6Szw" name="price" label="price" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

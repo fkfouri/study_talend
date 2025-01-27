@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_N0014OApEeuBr9OL88F9nQ" name="books" id="_N00O0OApEeuBr9OL88F9nQ" dataPackage="_N0015uApEeuBr9OL88F9nQ" JSONFilePath="C:/Talend/data/in/store.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_N0014eApEeuBr9OL88F9nQ" LimitBoucle="50" AbsoluteXPathQuery="$.store.goods.book[*]">
+      <schemaTargets xmi:id="_N0014uApEeuBr9OL88F9nQ" RelativeXPathQuery="category" TagName="category"/>
+      <schemaTargets xmi:id="_N0014-ApEeuBr9OL88F9nQ" RelativeXPathQuery="title" TagName="title"/>
+      <schemaTargets xmi:id="_N0015OApEeuBr9OL88F9nQ" RelativeXPathQuery="author" TagName="author"/>
+      <schemaTargets xmi:id="_N0015eApEeuBr9OL88F9nQ" RelativeXPathQuery="price" TagName="price"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_N0015uApEeuBr9OL88F9nQ" name="default" dataManager="_N0014OApEeuBr9OL88F9nQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_N0015-ApEeuBr9OL88F9nQ" id="_GdjtYOApEeuBr9OL88F9nQ" label="booksSchema">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_N0016OApEeuBr9OL88F9nQ" label="category" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_N0016eApEeuBr9OL88F9nQ" label="title" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_N0016uApEeuBr9OL88F9nQ" label="author" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_N0016-ApEeuBr9OL88F9nQ" label="price" length="5" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
