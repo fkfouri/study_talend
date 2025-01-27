@@ -10,6 +10,7 @@ talend.project
 TDQ_Libraries/
 pom.xml
 
+data/out
 
 #by kfouri
 *.screenshot
