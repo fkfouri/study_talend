@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_GMKAAN2KEe-a8ehM1xvluA" name="sql_lite" id="_CzolAN2KEe-a8ehM1xvluA" label="sql_lite" dataPackage="_NbwaQN2KEe-a8ehM1xvluA" DatabaseType="SQLite" DriverClass="org.sqlite.JDBC" URL="jdbc:sqlite:/c:/dev/sw/talend/tos_di-20211109_1610-v8.0.1/workspace/local_project/data/in/sqlite.db" Port="" Username="" Password="" ServerName="" DatasourceName="" FileFieldName="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/sqlite.db" SID="" SqlSynthax="" StringQuote="" NullChar="" DbmsId="sqlite_id" ProductId="SQLITE" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_GMKAAd2KEe-a8ehM1xvluA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_GMTxAN2KEe-a8ehM1xvluA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_GMTxAd2KEe-a8ehM1xvluA" tag="Status" value=""/>
+    <taggedValue xmi:id="_GMTxAt2KEe-a8ehM1xvluA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_GMTxA92KEe-a8ehM1xvluA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_GMTxBN2KEe-a8ehM1xvluA" tag="Description" value=""/>
+    <taggedValue xmi:id="_GMTxBd2KEe-a8ehM1xvluA" tag="Author" value=""/>
+    <taggedValue xmi:id="_GMTxBt2KEe-a8ehM1xvluA" tag="otherParameter"/>
+    <taggedValue xmi:id="_NYMv8N2KEe-a8ehM1xvluA" tag="DB ProductName" value="SQLite"/>
+    <taggedValue xmi:id="_NYMv8d2KEe-a8ehM1xvluA" tag="DB ProductVersion" value="3.6.14.2"/>
+    <taggedValue xmi:id="_NYMv8t2KEe-a8ehM1xvluA" tag="DB IdentifierQuoteString" value=" "/>
+    <parameters xmi:id="_GMKAAt2KEe-a8ehM1xvluA" key="CONN_PARA_KEY_USERNAME" value=""/>
+    <parameters xmi:id="_LVhGgN2KEe-a8ehM1xvluA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_NbwaQN2KEe-a8ehM1xvluA" name=" " dataManager="_GMKAAN2KEe-a8ehM1xvluA"/>
+</xmi:XMI>

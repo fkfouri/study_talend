@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_abi_QFBKEeyOX5bAfnTzFw" name="customerData" id="_abiYMFBKEeyOX5bAfnTzFw" dataPackage="_abi_QVBKEeyOX5bAfnTzFw" Server="Localhost 127.0.0.1" FilePath="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/customerData.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_abi_QVBKEeyOX5bAfnTzFw" name="default" dataManager="_abi_QFBKEeyOX5bAfnTzFw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_abi_QlBKEeyOX5bAfnTzFw" id="_TozgIFBKEeyOX5bAfnTzFw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abi_Q1BKEeyOX5bAfnTzFw" label="custId" length="3" talendType="id_Integer" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abi_Q1BKEeyOX5bAfnTzFw" label="custId" length="4" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abi_RFBKEeyOX5bAfnTzFw" label="name" length="30" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abi_RVBKEeyOX5bAfnTzFw" label="address" length="50" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_abi_RlBKEeyOX5bAfnTzFw" label="zip_code" length="5" talendType="id_Integer" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
