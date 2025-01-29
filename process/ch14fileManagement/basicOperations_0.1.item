@@ -9,7 +9,7 @@
     <contextParameter comment="" name="paramFile" prompt="paramFile?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="prePostJob_talend.properties" internalId="_PlRv1cfBEe2PT52_Dwrqqg"/>
     <contextParameter comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="params/" internalId="_PlRv1sfBEe2PT52_Dwrqqg"/>
     <contextParameter comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="VAR central" internalId="_PlRv18fBEe2PT52_Dwrqqg"/>
-    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/Talend/data/" internalId="_PlRv2MfBEe2PT52_Dwrqqg"/>
+    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/" internalId="_PlRv2MfBEe2PT52_Dwrqqg"/>
     <contextParameter comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="logs/" internalId="_PlRv2cfBEe2PT52_Dwrqqg"/>
   </context>
   <parameters>
@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:4FmWykhymW50oq9p/6gixbqGFLbGS6GDalVGLwHT" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:SmCIJHFAFM3JtAOCMCvU/jzkyjpyPp3KomszFRf1" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q8yNzcp8PbHXdUD/Kos2xzBpHa8WEFCc+59309Qj" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KvkCfGOENNaoSTNZZQ4Ugn7L3Edut4DQnLxAOB2o" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
