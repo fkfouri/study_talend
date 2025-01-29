@@ -1,6 +1,8 @@
 LINE===================================================
 HELP_SIZE=20
 COMPOSER_PATH?="./docker-compose.yml"
+IMAGE_NAME?=image_to_run
+DOCKERFILE?="./dockerfile"
 
 .PHONY: help
 help:
@@ -31,3 +33,25 @@ compose_bash:
 
 compose_sh:
 	docker exec -it  baquara_model_wheel bash	
+
+#################################################################################
+# --- Docker Build
+#################################################################################
+build: ## Build docker image
+	-docker build -t ${IMAGE_NAME} -f $(DOCKERFILE) .
+
+__docker_run:
+	-docker run --rm $(OPTIONS) -v $(PWD):/local/ --name ${IMAGE_NAME} ${IMAGE_NAME} $(CMD)
+
+run: ## Run docker
+	@make __docker_run CMD="" OPTIONS="-d"
+
+bash: ## Run docker iterative bash
+	@make __docker_run CMD="bash" OPTIONS="-it"
+
+sh: ## Run docker iterative sh
+	@make __docker_run CMD="sh" OPTIONS="-it"
+
+mysql:
+	@echo rodar "SOURCE /local/sakila-schema.sql; SOURCE /local/sakila-data.sql;"
+	docker exec -it mysql_container mysql -u root -p"root"
