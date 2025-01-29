@@ -28,4 +28,4 @@ https://github.com/advanova/talend-open-studio/releases
 
 ## Curso Talend - Data Integration & ETL with Talend Open Studio Zero to Hero
 - ref: https://meta.udemy.com/course/data-integration-etl-talend-open-studio-zero-to-hero/
-- Instrutor: Samuel Lenk
+- Instrutor: [Samuel Lenk](samuellenkb@gmail.com)

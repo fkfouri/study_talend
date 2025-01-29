@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendJSON:JSONFileConnection xmi:id="_N0014OApEeuBr9OL88F9nQ" name="books" id="_N00O0OApEeuBr9OL88F9nQ" dataPackage="_N0015uApEeuBr9OL88F9nQ" JSONFilePath="C:/Talend/data/in/store.json" Encoding="UTF-8" readbyMode="JSONPATH">
+  <TalendJSON:JSONFileConnection xmi:id="_N0014OApEeuBr9OL88F9nQ" name="books" id="_N00O0OApEeuBr9OL88F9nQ" dataPackage="_N0015uApEeuBr9OL88F9nQ" JSONFilePath="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json" Encoding="UTF-8" readbyMode="JSONPATH">
     <schema xmi:id="_N0014eApEeuBr9OL88F9nQ" LimitBoucle="50" AbsoluteXPathQuery="$.store.goods.book[*]">
       <schemaTargets xmi:id="_N0014uApEeuBr9OL88F9nQ" RelativeXPathQuery="category" TagName="category"/>
       <schemaTargets xmi:id="_N0014-ApEeuBr9OL88F9nQ" RelativeXPathQuery="title" TagName="title"/>
