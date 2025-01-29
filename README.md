@@ -25,6 +25,11 @@ https://github.com/advanova/talend-open-studio/releases
 
 ```
 
+## Arquivos
+- <job>.item → Contém a definição do job em XML (estrutura, componentes e conexões). Este é o mais importante.
+- <job>.properties → Armazena metadados do job, como versão e informações do repositório.
+- <job>.screenshot → Apenas uma imagem do fluxo do job para exibição no Talend Studio. Pode ser opcional.
+
 
 ## Curso Talend - Data Integration & ETL with Talend Open Studio Zero to Hero
 - ref: https://meta.udemy.com/course/data-integration-etl-talend-open-studio-zero-to-hero/

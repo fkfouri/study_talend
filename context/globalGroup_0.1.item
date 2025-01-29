@@ -7,7 +7,7 @@
   <contextParameter xmi:id="_K3wFJVfoEeyLJ4_mHRBt1A" comment="contains temporary files" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tmp/"/>
   <contextParameter xmi:id="_K3wFJlfoEeyLJ4_mHRBt1A" comment="" name="paramFile" prompt="paramFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="prePostJob_talend.properties"/>
   <contextParameter xmi:id="_K3wFJ1foEeyLJ4_mHRBt1A" comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="params/"/>
-  <contextParameter xmi:id="_K3wFKFfoEeyLJ4_mHRBt1A" comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="central"/>
+  <contextParameter xmi:id="_K3wFKFfoEeyLJ4_mHRBt1A" comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="VAR central"/>
   <contextParameter xmi:id="_K3wFKVfoEeyLJ4_mHRBt1A" comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="logs/"/>
   <contextParameter xmi:id="_K3wFKlfoEeyLJ4_mHRBt1A" comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/Talend/data/"/>
 </talendfile:ContextType>
