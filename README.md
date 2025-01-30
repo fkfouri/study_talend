@@ -36,6 +36,29 @@ https://github.com/advanova/talend-open-studio/releases
 - Instrutor: [Samuel Lenk](samuellenkb@gmail.com)
 
 
-## Components
+## Para executar
+Por algum motivo identificado que o Dbeaver só se conecta após o Talend ter feito alguma consulta
+
+```bash
+#
+make compose_up
+
+# configurar sakila
+
+make mysql
+# depois que entrar no prompt mysql. rodar 
+```
+
+```sql
+SELECT host, user FROM mysql.user;
+
+SOURCE /local/sakila-schema.sql;
+SOURCE /local/sakila-data.sql;
+
+show databases;
+use sakila;
+show tables;
+select count(1) from rental;
+```
 
 
