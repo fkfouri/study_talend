@@ -59,6 +59,14 @@ show databases;
 use sakila;
 show tables;
 select count(1) from rental;
+
+-- Para conceder acesso ao usuario talend na base sakila
+GRANT ALL ON sakila.* TO 'talend'@'%';
+SHOW GRANTS FOR 'talend'@'%';
+SELECT User, Host, authentication_string FROM mysql.user WHERE User = 'talend';
+
+-- concede todos os privilégios para o usuario talend
+GRANT ALL PRIVILEGES ON *.* TO 'talend'@'%';
 ```
 
 
