@@ -12,7 +12,7 @@
 |![tJavaFles](image-13.png)|Permite criar um codigo java com start, main e end
 |![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
 |![tLogRow](image-2.png)|Log de exibição dos registros
-|![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario.
+|![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
 |![tMemorizeRows](image-12.png)|Usado para memorizar um certo numero de linhas e colunas de um dataset.<br>Observei que memorizou a ultima linha [fk]
 |![tNormalized](image-8.png)|Reorganiza os dados de forma e remover redundancias
 |![tReplace](image-15.png)|Replace definido diretamente no componente
