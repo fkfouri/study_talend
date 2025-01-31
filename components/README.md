@@ -6,6 +6,8 @@
 |![tBufferOutput](image-11.png)|Salva um dataset na memoria
 |![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
 |![tDenormalizedSortedRow](image-9.png)|
+|![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
+|![tFileProperties](image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fiaxoss<br>nas colunas
 |![tJavaFles](image-13.png)|Permite criar um codigo java com start, main e end
 |![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
