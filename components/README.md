@@ -2,7 +2,8 @@
 
 |Componente|Descricao
 |---|---|
-|![alt text](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
+|![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
+|![tDenormalizedSortedRow](image-9.png)|
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fiaxoss<br>nas colunas
 |![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
 |![tLogRow](image-2.png)|Log de exibição dos registros
@@ -12,9 +13,36 @@
 |![tSortRow](image-3.png)|Ordenação dos registros
 |![tSplit](image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
 
+## Observações
+
+### Tmap
+
+Quando você faz uma junção explícita no tMap, você pode definir um Match Model.
+
+Ele tem diferentes opções:
+
+1. Unique Match(Correspondência única):
+    - funciona com junção interna e junção externa esquerda
+    - seleção padrão
+    - apenas a última correspondência passada para a saída = outras correspondências serão ignoradas
+
+2. First Match (Primeira correspondência):
+    - funciona com junção interna e junção externa esquerda
+    - implica múltiplas correspondências esperadas na pesquisa
+    - apenas a primeira correspondência passada para a saída = outras correspondências serão ignoradas
+
+3. All Matches (Todas as correspondências):
+    - funciona com junção interna e junção externa esquerda
+    - implica múltiplas correspondências esperadas na pesquisa
+    - todas as correspondências passadas para a saída = nenhuma correspondência ignorada
+
+4. All Rows (Todas as linhas):
+    - não funciona com junção interna e junção externa esquerda
+    - cria uma junção cruzada entre a entrada principal e a(s) pesquisa(s)
 
 
-## Normalizar (Normalize)
+
+### Normalizar (tNormalized)
 
 Normalizar é o processo de reorganizar os dados em uma estrutura mais eficiente, eliminando a redundância e melhorando a integridade dos dados. Isso envolve:
 
@@ -29,7 +57,7 @@ Facilitar a manutenção e atualização dos dados
 
 Exemplo: Em um banco de dados de clientes, você pode ter uma tabela com os seguintes campos: Nome, Endereço, Telefone e E-mail. Ao normalizar, você pode criar duas tabelas: Clientes com Nome e Endereço, e Contatos com Telefone e E-mail, relacionadas pela chave Cliente_ID.
 
-## Denormalizar (Denormalize)
+### Denormalizar (tDenormalizedSortedRow e tDenormalizedRow)
 
 Denormalizar é o processo de reorganizar os dados em uma estrutura mais simples, sacrificando a integridade dos dados em favor da performance e velocidade de acesso. Isso envolve:
 
