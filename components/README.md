@@ -1,31 +1,60 @@
 # Components
 
+Componente de fundo verde é o ínicio.
+
+
 |Componente|Descricao
 |---|---|
 |![tAddCRCRow](image-18.png)|É um Checksum, CRC (Cyclic Redundancy Check) é um algoritmo usado para verificar a integridade dos dados durante a transferência ou armazenamento.
-|![tBufferOutput](image-11.png)|Salva um dataset na memoria
+|![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.
 |![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
+|![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
 |![tDenormalizedSortedRow](image-9.png)|
 |![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
+|![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.
+|![tFileInputProperties](image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
 |![tFileProperties](image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
-|![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fiaxoss<br>nas colunas
+|![tFileTouch](image-22.png)|Faz o touch do linux, gera um arquivo sem conteúdo
+|![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fixados nas colunas.<br>Gera um fluxo de dados a partir de varíaveis.
+|![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração
+|![tForeach](image-28.png)|Loop de elementos de um conjunto.
+|![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
+|![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
 |![tJavaFles](image-13.png)|Permite criar um codigo java com start, main e end
 |![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
 |![tLogRow](image-2.png)|Log de exibição dos registros
+|![tLoop](image-27.png)|Um laço For. Define um start/finish e step
 |![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
 |![tMemorizeRows](image-12.png)|Usado para memorizar um certo numero de linhas e colunas de um dataset.<br>Observei que memorizou a ultima linha [fk]
 |![tNormalized](image-8.png)|Reorganiza os dados de forma e remover redundancias
+|![tPostJob](image-36.png)|Executa sempre, mesmo que o job possua erro ou nao.
 |![tReplace](image-15.png)|Replace definido diretamente no componente
 |![tReplaceList](image-16.png)|Replace oriundo de uma lista, usa um lookup
-|![tReplicate](image-1.png)|Replicas, copias dos registros
+|![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas
+|![tRunJob](image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
 |![tSampleRow](image-10.png)|Para ver uma amostra de registros (configuravel)
 |![tSchemaComplianceCheck](image-17.png)|Verificador de schema de um dataset
+|![tSleep](image-24.png)|Provoca uma parada de tempo determinada
 |![tSortRow](image-3.png)|Ordenação dos registros
+|![tSystem](image-34.png)|Executa um comando no terminal
 |![tSplit](image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
+|![tUnite](image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.
 |![tUniqRow](image-14.png)|Remove duplicidades no dataset
+|![tWaitFile](image-30.png)|Aguarda até que um arquivo apareca. Tem limites de tempo e numero de tentativas.
 
 
 ## Observações
+
+### Funções Talend 
+
+
+#### String
+- Gera uma chave randomica de tamanho 6 formato ASCII: `TalendString.getAsciiRandomString(6)` 
+
+
+#### Datetime
+- Data/Hora atual com formatação em string: `TalendDate.formatDate("yyyy.MM.dd-HH.mm.ss",TalendDate.getCurrentDate())`
+
 
 ### Data Quality
 - duplicate
