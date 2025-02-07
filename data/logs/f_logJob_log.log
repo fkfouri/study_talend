@@ -1,0 +1,2 @@
+moment;pid;root_pid;father_pid;project;job;context;priority;type;origin;message;code
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;LOCAL_PROJECT;f_logJob;Default;3;tWarn;tWarn_1;job end;42

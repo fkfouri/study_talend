@@ -1,0 +1,2 @@
+moment;pid;project;job;language;origin;status;substatus;description
+2025-02-07 10:45:25;Y0jVKp;LOCAL_PROJECT;f_logJob;java;tAssert_1;Ok;--;rows in file = inserts in table

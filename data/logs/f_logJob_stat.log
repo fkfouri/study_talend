@@ -1,0 +1,17 @@
+moment;pid;father_pid;root_pid;system_pid;project;job;job_repository_id;job_version;context;origin;message_type;message;duration
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tDBConnection_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tDBConnection_1;end;success;390
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFileExist_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFileExist_1;end;success;2
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tDBOutput_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFlowMeter_3;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFileInputDelimited_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFileInputDelimited_1;end;success;8
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tFlowMeter_3;end;success;10
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tDBOutput_1;end;success;160
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tAssert_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tAssert_1;end;success;3
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tPostjob_1;begin;;
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;tPostjob_1;end;success;1
+2025-02-07 10:45:25;Y0jVKp;Y0jVKp;Y0jVKp;13272;LOCAL_PROJECT;f_logJob;_dXM00HfBEeuJaeaDjvlbbw;0.1;Default;;end;success;587

@@ -6,22 +6,28 @@ Componente de fundo verde é o ínicio.
 |Componente|Descricao
 |---|---|
 |![tAddCRCRow](image-18.png)|É um Checksum, CRC (Cyclic Redundancy Check) é um algoritmo usado para verificar a integridade dos dados durante a transferência ou armazenamento.
+|![tAssert](image-37.png)|é usado para realizar testes e verificações dentro de um job. Ele permite validar condições específicas e emitir mensagens caso essas condições não sejam atendidas. É útil para testes automatizados e validação de dados dentro do fluxo de ETL.
+|![tAssertCatcher](image-38.png)|Junto com o tAssert, captura falhas e pode gerar logs ou relatórios.<br>- pode Unico catcher que não pode ser configurado pela ABA job/Stats&Log.
 |![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.
 |![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
 |![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
 |![tDenormalizedSortedRow](image-9.png)|
+|![tDie](image-42.png)|Gera log de erro e pode parar a execução do job
 |![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
 |![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.
 |![tFileInputProperties](image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
 |![tFileProperties](image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
 |![tFileTouch](image-22.png)|Faz o touch do linux, gera um arquivo sem conteúdo
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fixados nas colunas.<br>Gera um fluxo de dados a partir de varíaveis.
+|![tFlowMeter](image-39.png)|Medidor de vazão, captura o volume de dados que passa por uma conexão
+|![tFlowMeterCatcher](image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração
 |![tForeach](image-28.png)|Loop de elementos de um conjunto.
 |![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
 |![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
 |![tJavaFles](image-13.png)|Permite criar um codigo java com start, main e end
 |![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
+|![tLogCatcher](image-43.png)|Em conjunto com o tWarn e tDie, captura os logs gerados e os apresentam em forma de logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tLogRow](image-2.png)|Log de exibição dos registros
 |![tLoop](image-27.png)|Um laço For. Define um start/finish e step
 |![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
@@ -38,10 +44,11 @@ Componente de fundo verde é o ínicio.
 |![tSortRow](image-3.png)|Ordenação dos registros
 |![tSystem](image-34.png)|Executa um comando no terminal
 |![tSplit](image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
+|![tStatCatcher](image-44.png)|Captura os logs de execuções gerais de uma job ou de um componente específico e os transformam em logs ou relatórios. <br>- Precisa habilitar na aba Components/Advanced Settings/tStatCatcher Statistics do componente para habilitar a captura;<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tUnite](image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.
 |![tUniqRow](image-14.png)|Remove duplicidades no dataset
 |![tWaitFile](image-30.png)|Aguarda até que um arquivo apareca. Tem limites de tempo e numero de tentativas.
-
+|![tWarn](image-41.png)|Gera log de Warn
 
 ## Observações
 
