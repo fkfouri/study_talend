@@ -1,3 +1,4 @@
 2025-02-07 10:44:14;YsXG3n;YsXG3n;YsXG3n;LOCAL_PROJECT;g_logJobBetter;Default;5;tDie;tDie_1;file not available: C:/Talend/data/in/sales.csv;15
 2025-02-07 10:44:14;YsXG3n;YsXG3n;YsXG3n;LOCAL_PROJECT;g_logJobBetter;Default;3;tWarn;tWarn_1;job end;42
 2025-02-07 10:46:22;W799XU;W799XU;W799XU;LOCAL_PROJECT;g_logJobBetter;Default;3;tWarn;tWarn_1;job end;42
+2025-02-07 10:53:14;qRUTRu;qRUTRu;qRUTRu;LOCAL_PROJECT;h_logProject;Default;3;tWarn;tWarn_1;job end;42
