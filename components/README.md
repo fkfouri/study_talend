@@ -22,6 +22,16 @@ Documentation in Talend:
 - Document properties of job
 good example? = this job (-;
 
+
+## Build
+
+Passando parametro na execução fora do Talend:
+```powershell
+# chamada powershell
+a_deployment_run.ps1 --context_param noRows=6
+```
+
+
 ## Components
 
 Componente de fundo verde é o ínicio.
@@ -77,6 +87,8 @@ Componente de fundo verde é o ínicio.
 ## Observações
 
 ### Funções Talend 
+
+- Gera uma _sequence_: `Numeric.sequence("s1",1,1)` 
 
 
 #### String

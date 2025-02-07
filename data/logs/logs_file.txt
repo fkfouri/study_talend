@@ -3,3 +3,4 @@
 2025-02-07 10:46:22;W799XU;W799XU;W799XU;LOCAL_PROJECT;g_logJobBetter;Default;3;tWarn;tWarn_1;job end;42
 2025-02-07 10:53:14;qRUTRu;qRUTRu;qRUTRu;LOCAL_PROJECT;h_logProject;Default;3;tWarn;tWarn_1;job end;42
 2025-02-07 11:12:17;YnUOsV;YnUOsV;YnUOsV;LOCAL_PROJECT;b_documentation;Default;4;tWarn;tWarn_1;Dummy Warn ...;42
+2025-02-07 11:44:39;IOdUEE;IOdUEE;IOdUEE;LOCAL_PROJECT;a_deployment;Default;6;Java Exception;tFixedFlowInput_1;java.lang.NullPointerException:Cannot invoke "java.lang.Integer.intValue()" because "this.context.noRows" is null;1
