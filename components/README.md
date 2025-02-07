@@ -1,4 +1,28 @@
-# Components
+## Melhores práticas de desenvolvimento Talend
+
+- Data flow = horizontal (esquerda para direita)
+- Trigger = vertical (de cima para baixo)
+- descriptive names
+- camelCaseNames
+- use existing fields for documentation - Descrição e Propósito
+- create directory structure for input, output, params, logs
+- define naming conventions
+- structure the repository
+- use versioning
+- use template jobs = with pre/post/logging/context/etc.
+
+
+Documentation in Talend:
+- Subjob Title
+- Component View Tab
+- Note component
+- Doc in repo
+- Business Model in Repo
+- Export job doc
+- Document properties of job
+good example? = this job (-;
+
+## Components
 
 Componente de fundo verde é o ínicio.
 
