@@ -47,6 +47,7 @@ Componente de fundo verde é o ínicio.
 |![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
 |![tDenormalizedSortedRow](image-9.png)|
 |![tDie](image-42.png)|Gera log de erro e pode parar a execução do job
+|![tExtractJSONFields](image-46.png)|Permite tranformar um json em um dataset
 |![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
 |![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.
 |![tFileInputProperties](image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
@@ -55,7 +56,7 @@ Componente de fundo verde é o ínicio.
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fixados nas colunas.<br>Gera um fluxo de dados a partir de varíaveis.
 |![tFlowMeter](image-39.png)|Medidor de vazão, captura o volume de dados que passa por uma conexão
 |![tFlowMeterCatcher](image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
-|![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração
+|![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração.<br>**Permite jogar key/value como global variable.**
 |![tForeach](image-28.png)|Loop de elementos de um conjunto.
 |![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
 |![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
@@ -71,9 +72,11 @@ Componente de fundo verde é o ínicio.
 |![tReplace](image-15.png)|Replace definido diretamente no componente
 |![tReplaceList](image-16.png)|Replace oriundo de uma lista, usa um lookup
 |![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas
+|![tRESTClient](image-45.png)|Chamada Rest de um API
 |![tRunJob](image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
 |![tSampleRow](image-10.png)|Para ver uma amostra de registros (configuravel)
 |![tSchemaComplianceCheck](image-17.png)|Verificador de schema de um dataset
+|![tSetGlobalVar](image-47.png)|Seta uma variavel global
 |![tSleep](image-24.png)|Provoca uma parada de tempo determinada
 |![tSortRow](image-3.png)|Ordenação dos registros
 |![tSystem](image-34.png)|Executa um comando no terminal

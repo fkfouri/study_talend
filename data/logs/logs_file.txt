@@ -4,3 +4,6 @@
 2025-02-07 10:53:14;qRUTRu;qRUTRu;qRUTRu;LOCAL_PROJECT;h_logProject;Default;3;tWarn;tWarn_1;job end;42
 2025-02-07 11:12:17;YnUOsV;YnUOsV;YnUOsV;LOCAL_PROJECT;b_documentation;Default;4;tWarn;tWarn_1;Dummy Warn ...;42
 2025-02-07 11:44:39;IOdUEE;IOdUEE;IOdUEE;LOCAL_PROJECT;a_deployment;Default;6;Java Exception;tFixedFlowInput_1;java.lang.NullPointerException:Cannot invoke "java.lang.Integer.intValue()" because "this.context.noRows" is null;1
+2025-02-10 16:45:11;OloVHL;OloVHL;OloVHL;LOCAL_PROJECT;f_readVaultCredentials;Default;5;tDie;tDie_1;error reading from Vault: {"errors":["2 errors occurred:\n\t* permission denied\n\t* invalid token\n\n"]}
+;403
+2025-02-10 16:45:11;OloVHL;OloVHL;OloVHL;LOCAL_PROJECT;f_readVaultCredentials;Default;6;Java Exception;tDBConnection_2;java.sql.SQLNonTransientConnectionException:Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'null:null'.;1

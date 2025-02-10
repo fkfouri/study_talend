@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:RyCI0WulVktjtCJx0wE/XNcLspnq/3GfzILmB7ZJ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:EylxRtqmjpGw3R7/RZ3YIYYE851HhVQLOBSNp3QM" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:22z/IELPWdH7MDN87eHtolKZcozUGppf4+tWN4w8" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CAPIXQtJn6c1dIH+EciTvCDBaePc+7Ihw2P3jqwq" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -119,7 +119,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DgukQi3DvKdassHVJRH4sw+81QEv168hmnoQQHHRo+e3Ts9z"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kS63qg9ItQNrif4jkY+n/+EYPmLtcuMGkO15vaZPZqboBf5h"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_6iPU0G2_EeuB8eHY6Hs3Ig - customerMaster" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
@@ -197,7 +197,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="update" expressionFilter="!(master.firstName.equals(sync.firstName))&#xA;||&#xA;!(master.lastName.equals(sync.lastName))" activateExpressionFilter="true">
         <mapperTableEntries name="id" expression="master.id " type="id_Integer"/>
@@ -233,7 +233,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8goamKnllaI/XreeHRtlW4cbDqNLbigDsQ8WlXSRlMzX1c8e"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n+u9767/kCK9VobLbirzkIzZqJJx7B8+UWW13uDtnYS5a7Hd"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_6iPU0G2_EeuB8eHY6Hs3Ig - customerSync" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
@@ -360,7 +360,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4opsSWFWDIoYyCqmeXmET1vmzZHAwN27OUIM/wp+hUlVJkGr"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:J6HKc90xmnsuMK/OTfepumKAHnJKFMwg+EOxBIT56wku603x"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -446,7 +446,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q3H1JtLuQomw1/jb0oUnyVN3NqMe4+ZC+XLeTNt26ypQgW5f"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:V/qhCIadF8MRn832jQ3mVyef8lgyouOMsiQUgmObcyo1ZQnZ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -532,7 +532,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OIu4Y4E0Otjgurc0G/xUMaylUoIw5seaXmW+MlkruHNmrXCX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+PyL8xLvIJMHkYJKDpgP9MsT31RFReL5RcwafDhYgOwujIlW"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_6iPU0G2_EeuB8eHY6Hs3Ig - customerSync" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
@@ -599,7 +599,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="delete" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="id" expression="sync2.id " type="id_Integer"/>
@@ -667,7 +667,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CccDHwfl9fqVSJtFXCr5phntosu7RgTl+7rWb6vBmx5uP2Jw"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EV4CMC3o2QsOalSGdeDrzAMpI4QdpKu3O0rMJXg+Py7S1QoB"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_6iPU0G2_EeuB8eHY6Hs3Ig - customerMaster" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
@@ -720,7 +720,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dsW/ZfacY0kUPqJgqB65coGepXJNZhU0O/v3RVc8EU65pm6e"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9AttEpumS6MFRSSGrIOtZ97KNEt43LOPd2yHo7dhMXf9UjNl"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>
@@ -837,7 +837,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="master2" show="false"/>
   </connection>
-  <note opaque="true" posX="736" posY="128" sizeHeight="129" sizeWidth="289" text="Tem dois subJobs pois nao consigo fazer &#xD;&#xA;tudo no mesmo&#xD;&#xA;&#xD;&#xA;Primeiro Subjob, detecta casos de update e delete&#xD;&#xA;&#xD;&#xA;Segundo subJob: detecta casos de delete">
+  <note opaque="true" posX="736" posY="128" sizeHeight="129" sizeWidth="289" text="Tem dois subJobs, pois nao eh possível fazer &#xD;&#xA;tudo no mesmo SubJob.&#xD;&#xA;&#xD;&#xA;Primeiro Subjob, detecta casos de update e delete&#xD;&#xA;&#xD;&#xA;Segundo subJob: detecta casos de delete">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
