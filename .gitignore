@@ -21,3 +21,8 @@ data_c2/tmp
 
 *.zip
 *.jar
+
+*.lock
+.venv
+.vscode
+__pycache__

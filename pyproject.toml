@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "local-project"
+version = "0.1.0"
+description = ""
+authors = ["Fabio Kfouri <kfouri.fabio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+confluent-kafka = "^2.8.0"
+faker = "^36.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
