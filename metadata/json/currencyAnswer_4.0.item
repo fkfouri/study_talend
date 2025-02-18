@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_iqRLkExuEe2Cd5DSwAsUJw" name="currencyAnswer" id="_iqQkgExuEe2Cd5DSwAsUJw" dataPackage="_iqRLmExuEe2Cd5DSwAsUJw" JSONFilePath="/home/sal/Talend/data/in/currencyAnswer.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_iqRLkUxuEe2Cd5DSwAsUJw" LimitBoucle="50" AbsoluteXPathQuery="$.success">
+      <schemaTargets xmi:id="_iqRLkkxuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.date" TagName="date"/>
+      <schemaTargets xmi:id="_iqRLk0xuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.query.amount" TagName="amount"/>
+      <schemaTargets xmi:id="_iqRLlExuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.query.from" TagName="from"/>
+      <schemaTargets xmi:id="_iqRLlUxuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.query.to" TagName="to"/>
+      <schemaTargets xmi:id="_iqRLlkxuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.info.rate" TagName="rate"/>
+      <schemaTargets xmi:id="_iqRLl0xuEe2Cd5DSwAsUJw" RelativeXPathQuery="$.result" TagName="result"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_iqRLmExuEe2Cd5DSwAsUJw" name="default" dataManager="_iqRLkExuEe2Cd5DSwAsUJw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_iqRLmUxuEe2Cd5DSwAsUJw" id="_Npv_IExuEe2Cd5DSwAsUJw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLmkxuEe2Cd5DSwAsUJw" label="date" length="10" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLm0xuEe2Cd5DSwAsUJw" label="amount" length="5" precision="2" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLnExuEe2Cd5DSwAsUJw" label="from" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLnUxuEe2Cd5DSwAsUJw" label="to" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLnkxuEe2Cd5DSwAsUJw" label="rate" length="8" precision="7" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iqRLn0xuEe2Cd5DSwAsUJw" label="result" length="10" precision="7" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

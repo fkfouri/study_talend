@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:FTPConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_mmaLAEo_Ee2nup-bksUGhg" id="_mmZj8Eo_Ee2nup-bksUGhg" Host="ftp.dlptest.com" Port="21" Username="dlpuser" Password="enc:system.encryption.key.v1:6+vIKUXchme1CIeN1FJhH4yHiAGNIrGVDFJo9ta4/5yVYojcPBJttVibBKpW07GqrrjEQL0=" Mode="Passive" Ecoding="UTF-8" Method="" KeystoreFile="" KeystorePassword="" Proxyhost="" Proxyport="" Proxyuser="" Proxypassword="" CustomEncode="UTF-8"/>

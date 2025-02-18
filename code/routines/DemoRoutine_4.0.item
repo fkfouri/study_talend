@@ -1,0 +1,107 @@
+package routines;
+
+import java.util.Arrays;
+import java.util.Random;
+import java.util.UUID;
+
+public class DemoRoutine {
+    
+    /**
+     * helloExample : return "hello" + message.
+     * {talendTypes} String
+     * {Category} User Defined
+     * {param} string("world") input: The string to be included.
+     * {example} helloExample("world") # hello world!.
+     */
+	public static String helloExample(String message) {
+		if (message == null || message.equals("")) {
+			message = "World";
+		}
+		return "Hello " + message + "!";
+	}
+	
+    /**
+     * getZipCode : return random zip code.
+     * {talendTypes} String
+     * {Category} User Defined
+     * {example} getZipCode(4) # 5782
+     */
+	public static String getZipCode(int len) {
+		// get a good zip code length
+		int zipLen = 0;
+		if (len < 1 || len > 5) {
+			zipLen  = 4;
+		} else {
+			zipLen = len;
+		}
+		// create the zip code
+		StringBuilder sb = new StringBuilder(zipLen);
+		Random random = new Random();
+		int min = 0;
+		int max = 9;
+		for (int i = 0; i < zipLen; i++) {
+			sb.append(random.nextInt(max - min) + min);			
+		}
+		return sb.toString();
+	}	
+    
+    /**
+	 * getRandomDay : Return a random open day
+	 * {talendTypes} String
+	 * {Category} User Defined
+	 * {example} getRandomDay() # Monday
+	 */
+	public static String getRandomOpenDay() {
+		String day[] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+		int i = ((Long) Math.round(Math.random() * (4))).intValue();
+		return day[i];
+	}
+	
+	/**
+	 * calculatePercentage : Get the percentage for a value from a reference
+	 * {talendTypes} Double
+	 * {Category} User Defined 
+     * {param} Double (value, reference) input: the value and reference to be used.
+	 * {example} addPercent(105.0, 140.0) # returns 75.0
+	 */
+	public static Double calculatePercentage(Double value, Double reference) {
+		return value * 100.0 / reference;
+	}
+	
+	/**
+	 * getFileFetchUrl : Return the file fetch URL
+	 * {talendTypes} String
+	 * {Category} User Defined
+	 */
+	public static String getFileFetchUrl() {
+		return "http://talendforge.org/file_fetch.txt";
+	}
+	
+	/**
+     * getRandomUUID: return random UUID.
+     * {talendTypes} String
+     * {Category} User Defined
+     * {example} getRandomUUID() # f901ed16-3910-4160-a69a-082bee15ff78
+     */
+	public static String getRandomUUID() {
+		return "" + UUID.randomUUID();
+	}
+	
+	/**
+     * padString: pad a 'input' string to length 'len' with given 'paddingChar'.
+     * {talendTypes} String
+     * {Category} User Defined
+     * {example} padString("Hello", 7, '#') # "Hello##"
+     */
+	public static String padString(String input, int len, char paddingChar) {
+		if (null == input || len == 0) {
+            return null;
+        }
+		if (len < input.length()) {
+            return input.substring(0,len);
+        }
+        char[] target = new char[len - input.length()];
+        Arrays.fill(target, paddingChar);
+        return input + new String(target);
+	}
+}
