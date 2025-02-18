@@ -20,3 +20,9 @@
 2025-02-18 10:39:03;wuZGUo;wuZGUo;wuZGUo;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Access denied; you need (at least one of) the SUPER, SYSTEM_VARIABLES_ADMIN or SESSION_VARIABLES_ADMIN privilege(s) for this operation;1
 2025-02-18 10:40:05;AiXCPQ;AiXCPQ;AiXCPQ;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Loading local data is disabled; this must be enabled on both the client and server sides;1
 2025-02-18 10:40:46;cOienj;cOienj;cOienj;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Loading local data is disabled; this must be enabled on both the client and server sides;1
+2025-02-18 11:23:32;yfUJcn;lnesIJ;lnesIJ;LOCAL_PROJECT;d1_eltCreateTables;DEV;6;Java Exception;tDBConnection_1;java.sql.SQLException:Access denied for user 'samuel'@'172.24.0.1' (using password: YES);1
+2025-02-18 11:23:32;yfUJcn;lnesIJ;lnesIJ;LOCAL_PROJECT;d1_eltCreateTables;DEV;6;Java Exception;tCreateTable_1;java.lang.RuntimeException:Creating table failed;1
+2025-02-18 11:23:32;lnesIJ;lnesIJ;lnesIJ;LOCAL_PROJECT;d_elt;DEV;6;Java Exception;tRunJob_1;java.lang.RuntimeException:Child job running failed.
+java.lang.RuntimeException: Creating table failed;1
+2025-02-18 11:23:32;lnesIJ;lnesIJ;lnesIJ;LOCAL_PROJECT;d_elt;DEV;6;Java Exception;tELTMysqlOutput_1;java.sql.SQLSyntaxErrorException:Table 'test.results' doesn't exist;1
+2025-02-18 11:36:36;7i6ZCN;7i6ZCN;7i6ZCN;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Loading local data is disabled; this must be enabled on both the client and server sides;1
