@@ -43,10 +43,14 @@ Componente de fundo verde é o ínicio.
 |![tAssert](image-37.png)|é usado para realizar testes e verificações dentro de um job. Ele permite validar condições específicas e emitir mensagens caso essas condições não sejam atendidas. É útil para testes automatizados e validação de dados dentro do fluxo de ETL.
 |![tAssertCatcher](image-38.png)|Junto com o tAssert, captura falhas e pode gerar logs ou relatórios.<br>- pode Unico catcher que não pode ser configurado pela ABA job/Stats&Log.
 |![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.
+|![tCReateTable](image-51.png)|Cria uma tabela no BD
 |![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
 |![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
 |![tDenormalizedSortedRow](image-9.png)|
 |![tDie](image-42.png)|Gera log de erro e pode parar a execução do job
+|![tDBOutputBulkExec](image-50.png)|Cria e Carrega arquivo TXT
+|![tDBOutuputBulk](image-49.png)|Cria arquivo TXT
+|![tDBBulkExec](image-48.png)|Carrega arquivo TXT
 |![tExtractJSONFields](image-46.png)|Permite tranformar um json em um dataset
 |![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
 |![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.

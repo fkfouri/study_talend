@@ -8,7 +8,19 @@ DOCKERFILE?="./dockerfile"
 help:
 	@echo "Usage: make [target]\n"
 
+#################################################################################
+# --- Git
+#################################################################################
+git_config_wsl: ## configura o git
+	git config --global user.name "Fulano"
+	git config --global user.email "fulano@suzano.com.br"
 
+git_back: ## volta um commit
+	git log -n 1
+	git reset --soft HEAD~1
+
+git_remote_update: ## atualiza a lista de repositórios remotos
+	git remote update origin --prune
 
 #################################################################################
 # COMPOSE																		#

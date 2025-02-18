@@ -7,3 +7,16 @@
 2025-02-10 16:45:11;OloVHL;OloVHL;OloVHL;LOCAL_PROJECT;f_readVaultCredentials;Default;5;tDie;tDie_1;error reading from Vault: {"errors":["2 errors occurred:\n\t* permission denied\n\t* invalid token\n\n"]}
 ;403
 2025-02-10 16:45:11;OloVHL;OloVHL;OloVHL;LOCAL_PROJECT;f_readVaultCredentials;Default;6;Java Exception;tDBConnection_2;java.sql.SQLNonTransientConnectionException:Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'null:null'.;1
+2025-02-18 08:53:31;Q5g39q;Q5g39q;Q5g39q;LOCAL_PROJECT;a_dbConnection;DEV;6;Java Exception;tDBConnection_1;java.sql.SQLException:Access denied for user 'samuel'@'172.24.0.1' (using password: YES);1
+2025-02-18 08:53:31;Q5g39q;Q5g39q;Q5g39q;LOCAL_PROJECT;a_dbConnection;DEV;6;Java Exception;tDBInput_1;java.lang.NullPointerException:Cannot invoke "java.sql.Connection.createStatement()" because "conn_tDBInput_1" is null;1
+2025-02-18 08:54:51;ZPbfXU;ZPbfXU;ZPbfXU;LOCAL_PROJECT;b_schemaHandling;DEV;6;Java Exception;tDBInput_1;java.sql.SQLSyntaxErrorException:Table 'test.employees' doesn't exist;1
+2025-02-18 08:54:51;ZPbfXU;ZPbfXU;ZPbfXU;LOCAL_PROJECT;b_schemaHandling;DEV;6;Java Exception;tDBInput_2;java.sql.SQLException:Access denied for user 'samuel'@'172.24.0.1' (using password: YES);1
+2025-02-18 08:54:51;ZPbfXU;ZPbfXU;ZPbfXU;LOCAL_PROJECT;b_schemaHandling;DEV;6;Java Exception;tDBInput_3;java.sql.SQLException:Access denied for user 'samuel'@'172.24.0.1' (using password: YES);1
+2025-02-18 10:31:21;yhHmAI;yhHmAI;yhHmAI;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tCreateTable_1;java.lang.RuntimeException:Creating table failed;1
+2025-02-18 10:32:26;7DcmcK;7DcmcK;7DcmcK;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tCreateTable_1;java.lang.RuntimeException:Creating table failed;1
+2025-02-18 10:33:13;IHAq3H;IHAq3H;IHAq3H;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tCreateTable_1;java.lang.RuntimeException:Creating table failed;1
+2025-02-18 10:34:02;Aw48aw;Aw48aw;Aw48aw;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Access denied; you need (at least one of) the SUPER, SYSTEM_VARIABLES_ADMIN or SESSION_VARIABLES_ADMIN privilege(s) for this operation;1
+2025-02-18 10:36:02;zIpgBd;zIpgBd;zIpgBd;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Access denied; you need (at least one of) the SUPER, SYSTEM_VARIABLES_ADMIN or SESSION_VARIABLES_ADMIN privilege(s) for this operation;1
+2025-02-18 10:39:03;wuZGUo;wuZGUo;wuZGUo;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Access denied; you need (at least one of) the SUPER, SYSTEM_VARIABLES_ADMIN or SESSION_VARIABLES_ADMIN privilege(s) for this operation;1
+2025-02-18 10:40:05;AiXCPQ;AiXCPQ;AiXCPQ;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Loading local data is disabled; this must be enabled on both the client and server sides;1
+2025-02-18 10:40:46;cOienj;cOienj;cOienj;LOCAL_PROJECT;c_bulkLoad;DEV;6;Java Exception;tDBOutputBulkExec_1_tMBE;java.sql.SQLSyntaxErrorException:Loading local data is disabled; this must be enabled on both the client and server sides;1

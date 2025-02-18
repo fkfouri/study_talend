@@ -1,1 +1,6 @@
 CREATE DATABASE test;
+
+SET GLOBAL local_infile = 1;
+GRANT FILE ON *.* TO 'talend'@'%';
+GRANT SYSTEM_VARIABLES_ADMIN ON *.* TO 'talend'@'%';
+FLUSH PRIVILEGES;
