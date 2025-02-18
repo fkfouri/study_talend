@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:SgHOb3YkeHDZDNGBKkI2mPM+LjsVjoUOo61p1j7P" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:/gQENHR3RVVlMBpnlVP7JU11eUbOsgQUAmeTsCV7" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rzfNnhXen+mimK3FTtmYelmH5OsgPee35yIRAiWC" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:c5+avsVbvjwEx2/AEG5q1jw2wRstJKLZbdcgaT0+" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -174,7 +174,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Vd0ww+OykSosql54Zk8DeiHCYO3VhVbcLnA86ZMYwzx47lQQ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z8vdej20cebE0T1RY2Y9cG6YkqfZj+ptpXOgFrLao9QcIU2e"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
@@ -183,7 +183,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100" show="false"/>
@@ -243,7 +243,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0xa6Q9iH9qT+ItLO3kd7dY4BZum2auPsCJPyxXMyJsqKZNfT"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mxf35DUzG5didxSRtx3F/DDixjA/svkzNbAuq/mmPaOnF0ac"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerSync&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -252,7 +252,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -313,7 +313,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;test&quot;" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xnmUpUf3H6VquMbMACyrfmEAtyPOkHTryeKJLAHFOP3llhAC"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/3i19dL4PH0vgdd687iYy+xdW+E2GO0Iaj1jJBwAMgRc1Rpt"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" value="" show="false"/>
@@ -366,7 +366,7 @@
     <elementParameter field="TEXT" name="TABLE" value="&quot;customerMaster&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" value="SET" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
     <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" value="false" show="false"/>
@@ -397,7 +397,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;test&quot;" show="false"/>
     <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@db10g_test&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4dtMAhSBN8t5GvbjMk/9dkqiN2F6TEXiSvi0s4Qp2GD+g9vT"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XVRJJb6V9zdDYsbissEWk4frPkYadzcSWwHBJbrXy/OZAHSY"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION_ACCESS" value="" show="false"/>
@@ -450,7 +450,7 @@
     <elementParameter field="TEXT" name="TABLE" value="&quot;customerSync&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CREATE_TABLE_TYPE" value="SET" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="MSSQL_ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;" show="false"/>
     <elementParameter field="CHECK" name="ENFORCE_DELIMITED_IDENTIFIERS" value="false" show="false"/>
@@ -510,7 +510,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HlzQyshzS46CQFzZErhiAcm2F4jq1u8jEFi4nytQwBBclocy"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uEhytGf8e5kx+PyzL1xzQh6iVVehiDeoCECMTLz+mmJdisNq"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -521,7 +521,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -630,7 +630,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:faPl6HCBgzLGqzzcxQfPzX7iWMHG6nL3LsfhErgmIkewNz+7"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ePzS11/BiMWfFtbxrV1YzPbZLZP6BCqNckcVeOlPDMSfV7V9"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -641,7 +641,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100" show="false"/>
@@ -750,7 +750,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cXQJF8DMeNzy2ghl2HTRSMSklXEpHejaczMf4gsyTd1ajqAi"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4JXEs0RZhmox9IB2wQFkfe7Q+y819Md+/3kajErRNKBoDkq8"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;customerMaster&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>
@@ -761,7 +761,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;serverTimezone=America/Sao_Paulo&quot;"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true" show="false"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100" show="false"/>
@@ -894,7 +894,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>

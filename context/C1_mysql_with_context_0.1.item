@@ -4,6 +4,6 @@
   <contextParameter xmi:id="_5EFhklKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_Database" prompt="mysql_with_context_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="test"/>
   <contextParameter xmi:id="_5EFhk1KJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_Port" prompt="mysql_with_context_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
   <contextParameter xmi:id="_5EFhlFKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_Server" prompt="mysql_with_context_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
-  <contextParameter xmi:id="_5EFhlVKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_Password" prompt="mysql_with_context_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ocmXvzhsfCm5IKrZkbpuzn4zpte3O9R9KlE/Phb9NtaUGg=="/>
-  <contextParameter xmi:id="_5EFhllKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_AdditionalParams" prompt="mysql_with_context_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <contextParameter xmi:id="_5EFhlVKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_Password" prompt="mysql_with_context_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/QzMOWW/Y4UqGlmIkjCmMpCCxT4/ByulfchEPHsMhFxtjQ=="/>
+  <contextParameter xmi:id="_5EFhllKJEeyJMLeu7b8cUg" comment="" name="mysql_with_context_AdditionalParams" prompt="mysql_with_context_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="serverTimezone=America/Sao_Paulo"/>
 </talendfile:ContextType>
