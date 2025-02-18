@@ -11,6 +11,7 @@ TDQ_Libraries/
 pom.xml
 
 data/out
+data_c2/out
 
 #by kfouri
 *.screenshot
