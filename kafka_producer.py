@@ -13,7 +13,7 @@ if __name__ == "__main__":
     fake = Faker({'pt_BR'})
     date_format = "%Y-%m-%d"
 
-    for _ in range(10):
+    for _ in range(20):
         try:
             msg = {"name": fake.name(), "cpf": fake.cpf(), "birth_date": fake.date_of_birth(minimum_age=18, maximum_age=65).strftime(date_format)}
             msg = json.dumps(msg).encode("utf-8")
@@ -25,7 +25,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Error: {e}")
 
-        sleep(1)
+        sleep(.5)
         p.poll(0) 
         p.flush()
 
