@@ -12,6 +12,12 @@ https://github.com/advanova/talend-open-studio/releases
 - **ESB - Enterprise Service Bus**: Esse módulo foca na integração de aplicações em tempo real. Ele ajuda a construir APIs e serviços baseados em microserviços, permitindo comunicação eficiente entre sistemas. É muito usado em arquiteturas orientadas a serviços (SOA).
 - **BD - Big Data**: É direcionado a processamento de grandes volumes de dados em plataformas como Hadoop, Spark e outras tecnologias de Big Data. Ele facilita o uso dessas tecnologias sem precisar de conhecimento avançado em codificação
 
+## Talend Exchange
+
+- [Talend Exchange - Deprecated](http://exchange.talend.com/)
+- https://github.com/TalendExchange
+- https://github.com/TalendExchange/Components
+
 ## Settings
 
 ```ini

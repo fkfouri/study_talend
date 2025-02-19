@@ -72,8 +72,10 @@ Componente de fundo verde é o ínicio.
 |![tForeach](image-28.png)|Loop de elementos de um conjunto.
 |![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
 |![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
-|![tJavaFles](image-13.png)|Permite criar um codigo java com start, main e end
-|![tJavaRow](image-4.png)|Aplica um algorítimo java por linha (??).<br>No exemplo fazia uma conversao de inteiro para string.
+|![tJava](image-73.png)|Componente Java de utilização única. <br>Ex.<br>- Definir uma variável global.<br>- Ler um arquivo de propriedades.
+|![tJavaFlex](image-13.png)|Permite criar um codigo java com start, main e end.<br>Na parte main é como se estivesse usando o tJavaRow.<br>Na parte Start e End é como se usa-se o tJava para antes e depois da leitura das linhas.
+|![tJavaRow](image-4.png)|Aplica um algorítimo java por linha.<br>No exemplo fazia uma conversao de inteiro para string. <br>`output_row.<column> = input_row.<column>;`
+|![tLibraryLoad](image-74.png)|Carrega um jar de terceiros.<br>Precisa importar a biblioteca pelo *advanced settings*.<br>Ex. `import org.apache.commons.lang3.StringUtils;`
 |![tLogCatcher](image-43.png)|Em conjunto com o tWarn e tDie, captura os logs gerados e os apresentam em forma de logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tLogRow](image-2.png)|Log de exibição dos registros
 |![tLoop](image-27.png)|Um laço For. Define um start/finish e step
@@ -157,7 +159,9 @@ System.out.printf("some %s value: %.3f%n", "Double", Math.PI);
 ![alt text](image-64.png)
 
 
-### Conversões String [http://bit.ly/stringDocs]
+### Conversões String 
+#### StringDocs
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html
 
 - Codigo:
     ```java
@@ -188,6 +192,16 @@ System.out.printf("some %s value: %.3f%n", "Double", Math.PI);
     ```
 - Resultado:
     ![alt text](image-65.png)
+
+#### StringUtils
+https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html
+Precisa usar o tLibraryLoad para importar a biblioteca `commons-lang3-3.10.jar`.
+```java
+import org.apache.commons.lang3.StringUtils;
+```
+
+![alt text](image-75.png)
+![alt text](image-76.png)
 
 ### Cuidados com NullPoint
 
