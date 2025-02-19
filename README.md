@@ -1,5 +1,9 @@
 # Talend
 
+## Tutorial
+
+- [Tutorial 🔜](components/Readme.md)
+
 ## Download
 
 https://github.com/advanova/talend-open-studio/releases
@@ -49,6 +53,7 @@ make mysql
 # depois que entrar no prompt mysql. rodar 
 ```
 
+Para exemplo que solicite o database Sakila.
 ```sql
 SELECT host, user FROM mysql.user;
 
