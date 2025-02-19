@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="DEV" jobType="Standard">
   <context confirmationNeeded="false" name="DEV">
-    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="/home/sal/Talend/data/in/" internalId="_jZsRoDs8Ee2fHu8LEuSpiw"/>
-    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="/home/sal/Talend/data/logs/" internalId="_jZsRoTs8Ee2fHu8LEuSpiw"/>
-    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="/home/sal/Talend/data/out/" internalId="_jZsRojs8Ee2fHu8LEuSpiw"/>
-    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="/home/sal/Talend/data/params/" internalId="_jZsRozs8Ee2fHu8LEuSpiw"/>
-    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="/home/sal/Talend/data/tmp/" internalId="_jZsRpDs8Ee2fHu8LEuSpiw"/>
+    <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/in/" internalId="_jZsRoDs8Ee2fHu8LEuSpiw"/>
+    <contextParameter comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/logs/" internalId="_jZsRoTs8Ee2fHu8LEuSpiw"/>
+    <contextParameter comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/out/" internalId="_jZsRojs8Ee2fHu8LEuSpiw"/>
+    <contextParameter comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/params/" internalId="_jZsRozs8Ee2fHu8LEuSpiw"/>
+    <contextParameter comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/tmp/" internalId="_jZsRpDs8Ee2fHu8LEuSpiw"/>
   </context>
   <context confirmationNeeded="false" name="TEST">
     <contextParameter comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="_tyupMM9PEeumwrRW6yYHaQ" type="id_Directory" value="" internalId="_jZsRpTs8Ee2fHu8LEuSpiw"/>
@@ -63,7 +63,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:KrrXwMn7ms3jnDTL7sUf1OtHoQ4qbFGtThZrSjc4" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:LAD1QY3g1JuxDZu3ObJW0dnAcMV4gozPREP7j7Ey" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -73,18 +73,18 @@
     <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
     <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/sal/Talend/workspace_big_data/.metadata&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/logs&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
@@ -98,15 +98,15 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kOnU1dPxj2nI5EGtW3M3W113SJsxqpLJcH3w/t3m" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5yDIdNxmsuiGOA4QJf/mPwqkRllT9XM2mQMFnhG1" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
     <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
     <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
     <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
@@ -155,7 +155,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;samuellenkb@gmail.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:GwDOIE/HcN50NhQMCJ9Z5ZyRIFrxBC5Njq3GkSfRcgoavw=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:L4n0r87oqwHO7H+K80sw5qVLbutOX3HIq0mzNSC9dzwNBw=="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
@@ -171,7 +171,7 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="110"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:m486o42RA5VAZw8woE7xpllLunD9PmBvKl50J7PSvHGSK1rM/MQ="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:SlSxaytWb49M/t6W+juAFw8fCGRFhoo6m59j1bt2jj/d2frb258="/>
     <elementParameter field="DIRECTORY" name="OUTPUT_DIRECTORY" value="&quot;/home/sal/Talend/workspace_big_data&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_PATTERN" value="TalendDate.getDate(&quot;yyyyMMdd-hhmmss&quot;) + &quot;_&quot; + java.util.UUID.randomUUID().toString().substring(0, 16) + &quot;.mail&quot;"/>
     <elementParameter field="CHECK" name="ALL_EMAILS" value="true"/>

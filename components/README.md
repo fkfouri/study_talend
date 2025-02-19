@@ -22,6 +22,90 @@ Documentation in Talend:
 - Document properties of job
 good example? = this job (-;
 
+## Conversões
+### Conversoes Numéricas
+
+- Widening: small to bigger -> implicito ok
+    - Ex: Short para Integer, Bytem Long, Float e Double
+![alt text](image-60.png)
+![alt text](image-61.png)
+
+- Narrowing: bigger to small -> explicito (CUIDADO)
+    - Ex. Double to Long
+        ![alt text](image-62.png)
+        ![alt text](image-63.png)
+
+- Precisão: Exemplo que pega .1 e soma em loop 10 vezes usando Double, Float e BigDecimal. Observe os diferentes resultados.
+    - Double: 0.9999999999999999
+    - Float:  1.0000001
+    - BigDecimal: 1.0
+
+- Formatting: String.format() -> http://bit.ly/formatString e http://bit.ly/stringDocs
+```java
+System.out.printf("some %s value: %,d%n", "Long", Long.MAX_VALUE);
+System.out.printf("some %s value: %.3f%n", "Double", Math.PI);
+```
+![alt text](image-64.png)
+
+
+### Conversões String [http://bit.ly/stringDocs]
+
+- Codigo:
+    ```java
+    String abc = "\tabc or whatEVer else 4 want here ... ";
+    System.out.println("🟢🟢 ORIGINAL INPUT: \"" + abc + "\"");
+    System.out.println("=======================================================");
+    // all this and more comes out of the box with Java
+    System.out.println("01. charAt: " + abc.charAt(2));
+    System.out.println("02. codePointAt: " + abc.codePointAt(2));
+    System.out.println("03. compareTo: " + abc.compareTo(abc));
+    System.out.println("04. compareToIgnoreCase: " + abc.compareToIgnoreCase(abc));
+    System.out.println("05. concat: " + abc.concat(abc)); // equivalent -> abc + abc
+    System.out.println("06. contains: " + abc.contains(abc));
+    System.out.println("07. endsWith: " + abc.endsWith(abc));
+    System.out.println("08. hashCode: " + abc.hashCode());
+    System.out.println("09. indexOf: " + abc.indexOf(0));
+    System.out.println("10. lastIndexOf: " + abc.lastIndexOf("c"));
+    System.out.println("11. length: " + abc.length());
+    System.out.println("12. matches: " + abc.matches(abc));
+    System.out.println("13. replace: " + abc.replace("a", "B").replace("e", "#")); // method chaining
+    System.out.println("14. startsWith: " + abc.startsWith(abc));
+    System.out.println("15. strip: " + abc.strip());
+    System.out.println("16. stripTrailing: " + abc.stripTrailing());
+    System.out.println("17. substring: " + abc.substring(0, 2));
+    System.out.println("18. toUpperCase: " + abc.toUpperCase());
+    System.out.println("19. toLowerCase: " + abc.toLowerCase());
+    // find Docs here: bit.ly/stringDocs
+    ```
+- Resultado:
+    ![alt text](image-65.png)
+
+### Cuidados com NullPoint
+
+Uso de operadores ternarios. `booleanExpression ? expression1 : expression2` 
+
+Exemplo: `(null == row2.name) ? "" : row2.name` 
+
+```java
+// Exemplo usado no curso
+null == row5.txt ? "N/A" : row5.txt.toUpperCase() 
+
+null == row5.txt ? "N/A" : 
+row5.txt.equalsIgnoreCase("dummy") ? "N/A 2" : 
+row5.txt.toUpperCase() 
+
+// simplificando, usando OR (||)
+null == row5.txt || row5.txt.equalsIgnoreCase("dummy") ? "N/A" : row5.txt.toUpperCase()
+
+
+// Exemplos usados na Alinea
+row5.data_saida != null ? TalendDate.formatDate("yyyy-MM-dd",row5.data_saida) : null
+
+row5.data_competencia != null ? TalendDate.parseDate("yyyy-MM-dd", TalendDate.formatDate("yyyy-MM-dd", row5.data_competencia))  : null 
+
+```
+
+
 
 ## Build
 
@@ -81,7 +165,7 @@ Componente de fundo verde é o ínicio.
 |![tPostJob](image-36.png)|Executa sempre, mesmo que o job possua erro ou nao.
 |![tReplace](image-15.png)|Replace definido diretamente no componente
 |![tReplaceList](image-16.png)|Replace oriundo de uma lista, usa um lookup
-|![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas
+|![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas<br>Contrario ao tUnite.
 |![tRESTClient](image-45.png)|Chamada Rest de um API
 |![tRowGenerator](image-52.png)|Gerador de linhas
 |![tRunJob](image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
@@ -93,7 +177,7 @@ Componente de fundo verde é o ínicio.
 |![tSystem](image-34.png)|Executa um comando no terminal
 |![tSplit](image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
 |![tStatCatcher](image-44.png)|Captura os logs de execuções gerais de uma job ou de um componente específico e os transformam em logs ou relatórios. <br>- Precisa habilitar na aba Components/Advanced Settings/tStatCatcher Statistics do componente para habilitar a captura;<br>- pode ser omitido se configurado pela ABA job/Stats&Log
-|![tUnite](image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.
+|![tUnite](image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.<br>Contrario ao tReplicate.
 |![tUniqRow](image-14.png)|Remove duplicidades no dataset. Precisa definir quais colunas nao tolera a duplicidade.
 |![tWaitFile](image-30.png)|Aguarda até que um arquivo apareca. Tem limites de tempo e numero de tentativas.
 |![tWarn](image-41.png)|Gera log de Warn

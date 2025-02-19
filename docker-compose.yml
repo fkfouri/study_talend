@@ -80,6 +80,35 @@ services:
     depends_on:
       - zoo1
 
+  # ftp:
+  #   image: fauria/vsftpd
+  #   container_name: ftp_container
+  #   environment:
+  #     - FTP_USER=user
+  #     - FTP_PASS=pass
+  #     - PASV_ADDRESS=127.0.0.1
+  #     - PASV_MIN_PORT=21100
+  #     - PASV_MAX_PORT=21110
+  #     - FILE_OPEN_MODE=0666
+  #     - LOCAL_UMASK=022
+  #     - REVERSE_LOOKUP_ENABLE=NO
+  #   ports:
+  #     - "20:20"
+  #     - "21:21"
+  #     - "21100-21110:21100-21110"
+  #   volumes:
+  #     - ./ftp:/home/vsftpd
+
+  # ftp:
+  #   image: ustclug/ftp
+  #   hostname: kafka1  
+  #   ports:
+  #     - "20-22:20-22"
+  #   environment:
+  #     PRIVATE_PASSWD: secret
+  #   volumes:
+  #     - ./:/srv/ftp
+
   # postgres:
   #   image: postgres:latest
   #   environment:
