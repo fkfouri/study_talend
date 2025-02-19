@@ -24,6 +24,39 @@ Documentation in Talend:
 - Document properties of job
 good example? = this job (-;
 
+
+## Técnicas de Performance Talend
+- JVM/job Memory
+- Execução paralela / divide worloads
+- ELT vs ETL
+- Bulk load
+- network
+
+## Pitfalls (armadilhas)
+- jobs too large (jobs complexos)
+    - dificil manutenção/compreensão
+    - tentar separar em unidades menores
+
+- child jobs wich much responsability (jobs filhos com muita responsabilidade)
+- not looking at code  (não olhar o código)
+- unclear versioning (versionamento não claro)
+    - cada versao dever ser uma versão executável
+- inconsistent names (nomes inconsistentes)
+    - ter algum tipo de convenção de nomes para jobs e o projeto
+    - ajuda na manutenção e compreensão
+    - ajuda na busca de componentes (filter)
+- cluttered project (projeto muito confuso)
+- changing context values (alterar o valor do contexto)
+    - embora sejam variáveis, tente as encarar como constantes (variaveis de contexto)
+    - se precisar de variáveis, usar as variáveis globias
+- not reducing columns & rows (não reduzir colunas e linhas)
+- too many "unusued" variables (muitos variaveis "nao usados")
+    - de preferencia de manter o mais enxuto possivel as variaveis
+    - apague as variaveis que nao utiliza
+- tMap spider jobs
+    - Muitas entradas e saidas do tMap (a nao ser que tenha uma tela grande)
+
+
 ## Build
 
 Passando parametro na execução fora do Talend:
@@ -44,7 +77,7 @@ Componente de fundo verde é o ínicio.
 |![tAggregateRow](image-66.png)|Permite fazer agragações/group by.<br>Precisa editar o Schema, principalmente de saída.
 |![tAssert](image-37.png)|é usado para realizar testes e verificações dentro de um job. Ele permite validar condições específicas e emitir mensagens caso essas condições não sejam atendidas. É útil para testes automatizados e validação de dados dentro do fluxo de ETL.
 |![tAssertCatcher](image-38.png)|Junto com o tAssert, captura falhas e pode gerar logs ou relatórios.<br>- pode Unico catcher que não pode ser configurado pela ABA job/Stats&Log.
-|![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.
+|![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.<br>Os nomes das colunas podem variar, o que precisa ser o mesmo são os tipos de dados das colunas.<br>Não tem como liberar a memória do Buffer durante a execução. Só será liberado quando o job terminar. Sugestão usar o tHashOutput.
 |![tCReateTable](image-51.png)|Cria uma tabela no BD
 |![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
 |![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
@@ -70,6 +103,7 @@ Componente de fundo verde é o ínicio.
 |![tFlowMeterCatcher](image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração.<br>**Permite jogar key/value como global variable.**
 |![tForeach](image-28.png)|Loop de elementos de um conjunto.
+|![tHashOutput](image-77.png)|Sugerido como melhor que o tBufferOutput.<br>- Permite que o Output e Input sejam conectados.<br>- Um hash pode ser explicitamente limpo/preenchido<br>- Não precisa necessariamente ler todo o Hash.<br>- Possibilidade de gerenciar key (id) no mapa hash.<br>- Precisa ser habilidate nas preferencias do projeto: Designer->Pallet->Tecnhical->Hash
 |![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
 |![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
 |![tJava](image-73.png)|Componente Java de utilização única. <br>Ex.<br>- Definir uma variável global.<br>- Ler um arquivo de propriedades.
