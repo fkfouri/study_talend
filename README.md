@@ -3,6 +3,7 @@
 ## Tutorial
 
 - [Tutorial 🔜](components/Readme.md)
+- Material complementar PDF
 
 ## Download
 
@@ -41,8 +42,9 @@ https://github.com/advanova/talend-open-studio/releases
 - <job>.screenshot → Apenas uma imagem do fluxo do job para exibição no Talend Studio. Pode ser opcional.
 
 
-## Curso Talend - Data Integration & ETL with Talend Open Studio Zero to Hero
-- ref: https://meta.udemy.com/course/data-integration-etl-talend-open-studio-zero-to-hero/
+## Curso Talend - 
+- [Data Integration & ETL with Talend Open Studio Zero to Hero](https://meta.udemy.com/course/data-integration-etl-talend-open-studio-zero-to-hero/)
+- [Talend Advanced for Big Data, Cloud and Database Integration](https://meta.udemy.com/course/talend-advanced-for-big-data-cloud-and-database-integration/)
 - Instrutor: [Samuel Lenk](samuellenkb@gmail.com)
 
 
