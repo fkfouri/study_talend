@@ -73,69 +73,69 @@ Componente de fundo verde é o ínicio.
 
 |Componente|Descricao
 |---|---|
-|![tAddCRCRow](image-18.png)|É um Checksum, CRC (Cyclic Redundancy Check) é um algoritmo usado para verificar a integridade dos dados durante a transferência ou armazenamento.
-|![tAggregateRow](image-66.png)|Permite fazer agragações/group by.<br>Precisa editar o Schema, principalmente de saída.
-|![tAssert](image-37.png)|é usado para realizar testes e verificações dentro de um job. Ele permite validar condições específicas e emitir mensagens caso essas condições não sejam atendidas. É útil para testes automatizados e validação de dados dentro do fluxo de ETL.
-|![tAssertCatcher](image-38.png)|Junto com o tAssert, captura falhas e pode gerar logs ou relatórios.<br>- pode Unico catcher que não pode ser configurado pela ABA job/Stats&Log.
-|![tBufferOutput](image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.<br>Os nomes das colunas podem variar, o que precisa ser o mesmo são os tipos de dados das colunas.<br>Não tem como liberar a memória do Buffer durante a execução. Só será liberado quando o job terminar. Sugestão usar o tHashOutput.
-|![tCReateTable](image-51.png)|Cria uma tabela no BD
-|![tConvertType](image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
-|![tCronometerStart](image-31.png)<br>![alt text](image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
-|![tDenormalizedSortedRow](image-9.png)|
-|![tDBRow](image-56.png)|**Executa um comando SQL**
-|![tDBSP](image-57.png)|Aciona uma Store Procedure. <br>No exemplo visto, fiz uma leitura de uma Store Procedure para uma varaivel local.
-|![tDie](image-42.png)|Gera log de erro e pode parar a execução do job
-|![tDBOutputBulkExec](image-50.png)|Cria e Carrega arquivo TXT
-|![tDBOutuputBulk](image-49.png)|Cria arquivo TXT
-|![tDBBulkExec](image-48.png)|Carrega arquivo TXT
-|![tDBSCD](image-58.png)| SCD - Slowly Change Dimensions<br>Reflete mudanças no BD em tabelas de Dimensão
-|![tELTInput](image-54.png)|Determina a tabela de origem para o tELTMap
-|![tELTMap](image-53.png)|Uma espécie de Lookup e tMap com BD. Permitiu criar uma chamada recursiva (sql hierarquica)
-|![tELTOutput](image-55.png)|Determina a tabela de saida do tELTMap
-|![tExtractJSONFields](image-46.png)|Permite tranformar um json em um dataset
-|![tFileList](image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
-|![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.
-|![tFileInputProperties](image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
-|![tFileProperties](image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
-|![tFileRowCount](image-78.png)|Contagem de linhas de um arquivo
-|![tFileTouch](image-22.png)|Faz o touch do linux, gera um arquivo sem conteúdo
+|![tAddCRCRow](./img/image-18.png)|É um Checksum, CRC (Cyclic Redundancy Check) é um algoritmo usado para verificar a integridade dos dados durante a transferência ou armazenamento.
+|![tAggregateRow](./img/image-66.png)|Permite fazer agragações/group by.<br>Precisa editar o Schema, principalmente de saída.
+|![tAssert](./img/image-37.png)|é usado para realizar testes e verificações dentro de um job. Ele permite validar condições específicas e emitir mensagens caso essas condições não sejam atendidas. É útil para testes automatizados e validação de dados dentro do fluxo de ETL.
+|![tAssertCatcher](./img/image-38.png)|Junto com o tAssert, captura falhas e pode gerar logs ou relatórios.<br>- pode Unico catcher que não pode ser configurado pela ABA job/Stats&Log.
+|![tBufferOutput](./img/image-11.png)|Salva um dataset na memoria. Cada schema vai para uma memoria. No caso se houver mais de um buffer, os dados irão para a mesma memoria caso tenha o mesmo schema, do contrário, irão para memórias diferentes.<br>Os nomes das colunas podem variar, o que precisa ser o mesmo são os tipos de dados das colunas.<br>Não tem como liberar a memória do Buffer durante a execução. Só será liberado quando o job terminar. Sugestão usar o tHashOutput.
+|![tCReateTable](./img/image-51.png)|Cria uma tabela no BD
+|![tConvertType](./img/image-5.png)|Conversao por tipo, parece um pouco o tJavaRow, mas sem usar codigo Java.<br>Usei o auto cast.
+|![tCronometerStart](./img/image-31.png)<br>![alt text](./img/image-32.png)|Calcula o tempo de processamento. Um colocado no PreJob e outro no PostJob
+|![tDenormalizedSortedRow](./img/image-9.png)|
+|![tDBRow](./img/image-56.png)|**Executa um comando SQL**
+|![tDBSP](./img/image-57.png)|Aciona uma Store Procedure. <br>No exemplo visto, fiz uma leitura de uma Store Procedure para uma varaivel local.
+|![tDie](./img/image-42.png)|Gera log de erro e pode parar a execução do job
+|![tDBOutputBulkExec](./img/image-50.png)|Cria e Carrega arquivo TXT
+|![tDBOutuputBulk](./img/image-49.png)|Cria arquivo TXT
+|![tDBBulkExec](./img/image-48.png)|Carrega arquivo TXT
+|![tDBSCD](./img/image-58.png)| SCD - Slowly Change Dimensions<br>Reflete mudanças no BD em tabelas de Dimensão
+|![tELTInput](./img/image-54.png)|Determina a tabela de origem para o tELTMap
+|![tELTMap](./img/image-53.png)|Uma espécie de Lookup e tMap com BD. Permitiu criar uma chamada recursiva (sql hierarquica)
+|![tELTOutput](./img/image-55.png)|Determina a tabela de saida do tELTMap
+|![tExtractJSONFields](./img/image-46.png)|Permite tranformar um json em um dataset
+|![tFileList](./img/image-20.png)|Exibe um lista de arquivos. Responde por pesquisas como __*.txt__
+|![tFileExist](./img/image-23.png)|Verifica se um arquivo existe. Saída IF.
+|![tFileInputProperties](./img/image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
+|![tFileProperties](./img/image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
+|![tFileRowCount](./img/image-78.png)|Contagem de linhas de um arquivo
+|![tFileTouch](./img/image-22.png)|Faz o touch do linux, gera um arquivo sem conteúdo
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fixados nas colunas.<br>Gera um fluxo de dados a partir de varíaveis.
-|![tFlowMeter](image-39.png)|Medidor de vazão, captura o volume de dados que passa por uma conexão
-|![tFlowMeterCatcher](image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
-|![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração.<br>**Permite jogar key/value como global variable.**
-|![tForeach](image-28.png)|Loop finito de elementos de um conjunto. Usado para percorrer um conjunto de dados.<br>Confundido com tLoop.
-|![tHashOutput](image-77.png)|Sugerido como melhor que o tBufferOutput.<br>- Permite que o Output e Input sejam conectados.<br>- Um hash pode ser explicitamente limpo/preenchido<br>- Não precisa necessariamente ler todo o Hash.<br>- Possibilidade de gerenciar key (id) no mapa hash.<br>- Precisa ser habilidate nas preferencias do projeto: Designer->Pallet->Tecnhical->Hash
-|![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
-|![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
-|![tJava](image-73.png)|Componente Java de utilização única. <br>Ex.<br>- Definir uma variável global.<br>- Ler um arquivo de propriedades.
-|![tJavaFlex](image-13.png)|Permite criar um codigo java com start, main e end.<br>Na parte main é como se estivesse usando o tJavaRow.<br>Na parte Start e End é como se usa-se o tJava para antes e depois da leitura das linhas.
-|![tJavaRow](image-4.png)|Aplica um algorítimo java por linha.<br>No exemplo fazia uma conversao de inteiro para string. <br>`output_row.<column> = input_row.<column>;`
-|![tLibraryLoad](image-74.png)|Carrega um jar de terceiros.<br>Precisa importar a biblioteca pelo *advanced settings*.<br>Ex. `import org.apache.commons.lang3.StringUtils;`
-|![tLogCatcher](image-43.png)|Em conjunto com o tWarn e tDie, captura os logs gerados e os apresentam em forma de logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
-|![tLogRow](image-2.png)|Log de exibição dos registros
-|![tLoop](image-27.png)|Um laço For ou While. Define um start/finish e step.<br> While: ![alt text](image-79.png)
-|![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
-|![tMemorizeRows](image-12.png)|Usado para memorizar um certo numero de linhas e colunas de um dataset.<br>Observei que memorizou a ultima linha [fk]
-|![tNormalized](image-8.png)|Reorganiza os dados de forma e remover redundancias
-|![tPostJob](image-36.png)|Executa sempre, mesmo que o job possua erro ou nao.
-|![tReplace](image-15.png)|Replace definido diretamente no componente
-|![tReplaceList](image-16.png)|Replace oriundo de uma lista, usa um lookup
-|![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas<br>Contrario ao tUnite.
-|![tRESTClient](image-45.png)|Chamada Rest de um API. Pode fazer GET e POST
-|![tRowGenerator](image-52.png)|Gerador de linhas
-|![tRunJob](image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
-|![tSampleRow](image-10.png)|Para ver uma amostra de registros (configuravel)
-|![tSchemaComplianceCheck](image-17.png)|Verificador de schema de um dataset
-|![tSetGlobalVar](image-47.png)|Seta uma variavel global
-|![tSleep](image-24.png)|Provoca uma parada de tempo determinada
-|![tSortRow](image-3.png)|Ordenação dos registros
-|![tSystem](image-34.png)|Executa um comando no terminal
-|![tSplit](image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
-|![tStatCatcher](image-44.png)|Captura os logs de execuções gerais de uma job ou de um componente específico e os transformam em logs ou relatórios. <br>- Precisa habilitar na aba Components/Advanced Settings/tStatCatcher Statistics do componente para habilitar a captura;<br>- pode ser omitido se configurado pela ABA job/Stats&Log
-|![tUnite](image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.<br>Contrario ao tReplicate.
-|![tUniqRow](image-14.png)|Remove duplicidades no dataset. Precisa definir quais colunas nao tolera a duplicidade.
-|![tWaitFile](image-30.png)|Aguarda até que um arquivo apareca. Tem limites de tempo e numero de tentativas.
-|![tWarn](image-41.png)|Gera log de Warn
+|![tFlowMeter](./img/image-39.png)|Medidor de vazão, captura o volume de dados que passa por uma conexão
+|![tFlowMeterCatcher](./img/image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
+|![tFlowTolterate](./img/image-25.png)|Converte um fluxo de dados em iteração.<br>**Permite jogar key/value como global variable.**
+|![tForeach](./img/image-28.png)|Loop finito de elementos de um conjunto. Usado para percorrer um conjunto de dados.<br>Confundido com tLoop.
+|![tHashOutput](./img/image-77.png)|Sugerido como melhor que o tBufferOutput.<br>- Permite que o Output e Input sejam conectados.<br>- Um hash pode ser explicitamente limpo/preenchido<br>- Não precisa necessariamente ler todo o Hash.<br>- Possibilidade de gerenciar key (id) no mapa hash.<br>- Precisa ser habilidate nas preferencias do projeto: Designer->Pallet->Tecnhical->Hash
+|![tInfiniteLoop](./img/image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
+|![tIterateToFlow](./img/image-26.png)|Converte uma iteração em fluxo de dados
+|![tJava](./img/image-73.png)|Componente Java de utilização única. <br>Ex.<br>- Definir uma variável global.<br>- Ler um arquivo de propriedades.
+|![tJavaFlex](./img/image-13.png)|Permite criar um codigo java com start, main e end.<br>Na parte main é como se estivesse usando o tJavaRow.<br>Na parte Start e End é como se usa-se o tJava para antes e depois da leitura das linhas.
+|![tJavaRow](./img/image-4.png)|Aplica um algorítimo java por linha.<br>No exemplo fazia uma conversao de inteiro para string. <br>`output_row.<column> = input_row.<column>;`
+|![tLibraryLoad](./img/image-74.png)|Carrega um jar de terceiros.<br>Precisa importar a biblioteca pelo *advanced settings*.<br>Ex. `import org.apache.commons.lang3.StringUtils;`
+|![tLogCatcher](./img/image-43.png)|Em conjunto com o tWarn e tDie, captura os logs gerados e os apresentam em forma de logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
+|![tLogRow](./img/image-2.png)|Log de exibição dos registros
+|![tLoop](./img/image-27.png)|Um laço For ou While. Define um start/finish e step.<br> While: ![alt text](./img/image-79.png)
+|![tMap](./img/image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
+|![tMemorizeRows](./img/image-12.png)|Usado para memorizar um certo numero de linhas e colunas de um dataset.<br>Observei que memorizou a ultima linha [fk]
+|![tNormalized](./img/image-8.png)|Reorganiza os dados de forma e remover redundancias
+|![tPostJob](./img/image-36.png)|Executa sempre, mesmo que o job possua erro ou nao.
+|![tReplace](./img/image-15.png)|Replace definido diretamente no componente
+|![tReplaceList](./img/image-16.png)|Replace oriundo de uma lista, usa um lookup
+|![tReplicate](./img/image-1.png)|Replicas, copias dos registros para n saídas<br>Contrario ao tUnite.
+|![tRESTClient](./img/image-45.png)|Chamada Rest de um API. Pode fazer GET e POST
+|![tRowGenerator](./img/image-52.png)|Gerador de linhas
+|![tRunJob](./img/image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
+|![tSampleRow](./img/image-10.png)|Para ver uma amostra de registros (configuravel)
+|![tSchemaComplianceCheck](./img/image-17.png)|Verificador de schema de um dataset
+|![tSetGlobalVar](./img/image-47.png)|Seta uma variavel global
+|![tSleep](./img/image-24.png)|Provoca uma parada de tempo determinada
+|![tSortRow](./img/image-3.png)|Ordenação dos registros
+|![tSystem](./img/image-34.png)|Executa um comando no terminal
+|![tSplit](./img/image-6.png)|Quebra colunas em linhas.<br>Ex>  Linha1 -> ABCD para Linha 1: AB e Linha 2: CD
+|![tStatCatcher](./img/image-44.png)|Captura os logs de execuções gerais de uma job ou de um componente específico e os transformam em logs ou relatórios. <br>- Precisa habilitar na aba Components/Advanced Settings/tStatCatcher Statistics do componente para habilitar a captura;<br>- pode ser omitido se configurado pela ABA job/Stats&Log
+|![tUnite](./img/image-33.png)|Unifica duas origens. Não unifica dados de processos paralelos. Precisam ter o mesmo Schema.<br>Contrario ao tReplicate.
+|![tUniqRow](./img/image-14.png)|Remove duplicidades no dataset. Precisa definir quais colunas nao tolera a duplicidade.
+|![tWaitFile](./img/image-30.png)|Aguarda até que um arquivo apareca. Tem limites de tempo e numero de tentativas.
+|![tWarn](./img/image-41.png)|Gera log de Warn
 
 
 
@@ -144,13 +144,13 @@ Componente de fundo verde é o ínicio.
 
 - Widening: small to bigger -> implicito ok
     - Ex: Short para Integer, Bytem Long, Float e Double
-![alt text](image-60.png)
-![alt text](image-61.png)
+![alt text](./img/image-60.png)
+![alt text](./img/image-61.png)
 
 - Narrowing: bigger to small -> explicito (CUIDADO)
     - Ex. Double to Long
-        ![alt text](image-62.png)
-        ![alt text](image-63.png)
+        ![alt text](./img/image-62.png)
+        ![alt text](./img/image-63.png)
 
 - Precisão: Exemplo que pega .1 e soma em loop 10 vezes usando Double, Float e BigDecimal. Observe os diferentes resultados.
     - Double: 0.9999999999999999
@@ -191,7 +191,7 @@ Componente de fundo verde é o ínicio.
 System.out.printf("some %s value: %,d%n", "Long", Long.MAX_VALUE);
 System.out.printf("some %s value: %.3f%n", "Double", Math.PI);
 ```
-![alt text](image-64.png)
+![alt text](./img/image-64.png)
 
 
 ### Conversões String 
@@ -226,7 +226,7 @@ https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.ht
     // find Docs here: bit.ly/stringDocs
     ```
 - Resultado:
-    ![alt text](image-65.png)
+    ![alt text](./img/image-65.png)
 
 #### StringUtils
 https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html
@@ -235,8 +235,8 @@ Precisa usar o tLibraryLoad para importar a biblioteca `commons-lang3-3.10.jar`.
 import org.apache.commons.lang3.StringUtils;
 ```
 
-![alt text](image-75.png)
-![alt text](image-76.png)
+![alt text](./img/image-75.png)
+![alt text](./img/image-76.png)
 
 ### Cuidados com NullPoint
 
@@ -300,18 +300,18 @@ if (input_row.name == null || input_row.name.length() == 0) {
 ```
 
 ### TALEND CONVERTIONS - StringHandling
-![alt text](image-67.png)
+![alt text](./img/image-67.png)
 ### TALEND CONVERTIONS -TalendDate 
 
 http://bit.ly/SimpleDateFormats
 
-![alt text](image-68.png)
+![alt text](./img/image-68.png)
 
 
 ## Talend Libraries
 
 ### Operações Aritiméticas
-![alt text](image-69.png)
+![alt text](./img/image-69.png)
 
 
 ```java
@@ -371,9 +371,9 @@ System.out.println("square root: " + Mathematical.SQRT(a));
 
 https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html
 
-![alt text](image-70.png)
+![alt text](./img/image-70.png)
 
-![alt text](image-71.png)
+![alt text](./img/image-71.png)
 
 
 ## Observações
@@ -461,7 +461,7 @@ UPDATE clientes SET Salário_Anterior = Salário, Salário = 6000 WHERE ID = 1;
 ```
 
 Exemplo de config no Talend.
-![alt text](image-59.png)
+![alt text](./img/image-59.png)
 
 ### LAG/LEAD
 
@@ -482,7 +482,7 @@ Sim, no Talend é possível replicar o comportamento das funções SQL LAG e LEA
 
 
 Segundo o curso, isso é possíve no Talend pois há uma leitura inversa no campo das variaveis no tMap.
-![alt text](image-80.png)
+![alt text](./img/image-80.png)
 
 
 ### Cancelando Job com tJava
@@ -538,7 +538,7 @@ A escolha entre normalizar e denormalizar depende do objetivo do projeto, do tip
 ## Routines
 Criar um código, função que possa ser usado em jobs.
 
-![alt text](image-72.png)
+![alt text](./img/image-72.png)
 
 ```java
 package routines;
