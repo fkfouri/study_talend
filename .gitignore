@@ -21,6 +21,7 @@ data_c2/tmp
 
 *.zip
 *.jar
+!backup.zip
 
 *.lock
 .venv
