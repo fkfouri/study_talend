@@ -97,12 +97,13 @@ Componente de fundo verde é o ínicio.
 |![tFileExist](image-23.png)|Verifica se um arquivo existe. Saída IF.
 |![tFileInputProperties](image-21.png)|Le um arquivo de parametros/propriedades como variaveis de ambiente
 |![tFileProperties](image-19.png)|Captura propriedades de um arquivo (tamanho, data, address, etc)
+|![tFileRowCount](image-78.png)|Contagem de linhas de um arquivo
 |![tFileTouch](image-22.png)|Faz o touch do linux, gera um arquivo sem conteúdo
 |![tFixedFlowInput](image.png)|Cria uma ou mais linhas com valores fixados nas colunas.<br>Gera um fluxo de dados a partir de varíaveis.
 |![tFlowMeter](image-39.png)|Medidor de vazão, captura o volume de dados que passa por uma conexão
 |![tFlowMeterCatcher](image-40.png)|Em conjunto com o tFlowMeter, captura as informações do medidos de vazão e os apresenta em logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tFlowTolterate](image-25.png)|Converte um fluxo de dados em iteração.<br>**Permite jogar key/value como global variable.**
-|![tForeach](image-28.png)|Loop de elementos de um conjunto.
+|![tForeach](image-28.png)|Loop finito de elementos de um conjunto. Usado para percorrer um conjunto de dados.<br>Confundido com tLoop.
 |![tHashOutput](image-77.png)|Sugerido como melhor que o tBufferOutput.<br>- Permite que o Output e Input sejam conectados.<br>- Um hash pode ser explicitamente limpo/preenchido<br>- Não precisa necessariamente ler todo o Hash.<br>- Possibilidade de gerenciar key (id) no mapa hash.<br>- Precisa ser habilidate nas preferencias do projeto: Designer->Pallet->Tecnhical->Hash
 |![tInfiniteLoop](image-29.png)|Loop por tempo (ex. a cada 2000 ms). Para parar somente com kill.
 |![tIterateToFlow](image-26.png)|Converte uma iteração em fluxo de dados
@@ -112,7 +113,7 @@ Componente de fundo verde é o ínicio.
 |![tLibraryLoad](image-74.png)|Carrega um jar de terceiros.<br>Precisa importar a biblioteca pelo *advanced settings*.<br>Ex. `import org.apache.commons.lang3.StringUtils;`
 |![tLogCatcher](image-43.png)|Em conjunto com o tWarn e tDie, captura os logs gerados e os apresentam em forma de logs ou relatórios.<br>- pode ser omitido se configurado pela ABA job/Stats&Log
 |![tLogRow](image-2.png)|Log de exibição dos registros
-|![tLoop](image-27.png)|Um laço For. Define um start/finish e step
+|![tLoop](image-27.png)|Um laço For ou While. Define um start/finish e step.<br> While: ![alt text](image-79.png)
 |![tMap](image-7.png)|Permite fazer mapeamento, tipo, uma seleção de saida. <br>Permite multiplas saidas, cada um com um schema diferente se necessario. <br>Usou essa expressao para gerar um sequence **Numeric.sequence("s1", 1, 1)**
 |![tMemorizeRows](image-12.png)|Usado para memorizar um certo numero de linhas e colunas de um dataset.<br>Observei que memorizou a ultima linha [fk]
 |![tNormalized](image-8.png)|Reorganiza os dados de forma e remover redundancias
@@ -120,7 +121,7 @@ Componente de fundo verde é o ínicio.
 |![tReplace](image-15.png)|Replace definido diretamente no componente
 |![tReplaceList](image-16.png)|Replace oriundo de uma lista, usa um lookup
 |![tReplicate](image-1.png)|Replicas, copias dos registros para n saídas<br>Contrario ao tUnite.
-|![tRESTClient](image-45.png)|Chamada Rest de um API
+|![tRESTClient](image-45.png)|Chamada Rest de um API. Pode fazer GET e POST
 |![tRowGenerator](image-52.png)|Gerador de linhas
 |![tRunJob](image-35.png)|Chama a execução de um job filho. Para retornar valor, a saida do filho deve ser de somente **UM** tBufferOutput.<br>- Usar o mesmo nome de variavel no contexto pai e filhos;<br>- Configurar o tRunJob para propagar todo o contexto para o filho;<br>- Para garantir o retorno, clicar em "Copy child job Schema". Pegara o schema do tBufferOutput
 |![tSampleRow](image-10.png)|Para ver uma amostra de registros (configuravel)
@@ -260,6 +261,42 @@ row5.data_saida != null ? TalendDate.formatDate("yyyy-MM-dd",row5.data_saida) : 
 
 row5.data_competencia != null ? TalendDate.parseDate("yyyy-MM-dd", TalendDate.formatDate("yyyy-MM-dd", row5.data_competencia))  : null 
 
+```
+
+### Nested Conditions
+
+Uso hierarquico de operadores ternarios.
+
+```java
+// tMap VAR - Pega a primeira letra do nome
+row2.name.toLowerCase().charAt(0) 
+
+// tMap Out - Classifica o Range da primeira letra do nome
+// Imporante observar como foi criado a hierarquia de condicoes
+// O "ELSE" fica em uma nova linha
+Var.vC >= 'a' && Var.vC <= 'h' ? "A-H" :
+Var.vC >= 'i' && Var.vC <= 'p' ? "I-P" :
+Var.vC >= 'q' && Var.vC <= 'z' ? "Q-Z" :
+"unknown" 
+
+
+// o mesmo conceito usando o IF tradicional em um tJava
+output_row.id = input_row.id;
+output_row.name = input_row.name;
+if (input_row.name == null || input_row.name.length() == 0) {
+	output_row.nameGroup = "unknown";
+} else {
+	char c = input_row.name.toLowerCase().charAt(0);
+	if (c >= 'a' && c <= 'h') {
+		output_row.nameGroup = "A-H";
+	} else if (c >= 'i' && c <= 'p') {
+		output_row.nameGroup = "I-P";
+	} else if (c >= 'q' && c <= 'z') {
+		output_row.nameGroup = "Q-Z";
+	} else {
+		output_row.nameGroup = "unknown";
+	}
+}
 ```
 
 ### TALEND CONVERTIONS - StringHandling
@@ -425,6 +462,43 @@ UPDATE clientes SET Salário_Anterior = Salário, Salário = 6000 WHERE ID = 1;
 
 Exemplo de config no Talend.
 ![alt text](image-59.png)
+
+### LAG/LEAD
+
+Uma possivel abordagem para captura de dados da linha anterior.
+
+Sim, no Talend é possível replicar o comportamento das funções SQL LAG e LEAD, que acessam valores de linhas anteriores ou seguintes, usando os componentes e mecanismos abaixo:
+
+> Segundo Chat GPT
+>  
+>1. Usando o tSortRow + tMap + variável global
+> Ordene os dados com um tSortRow (caso necessário).
+> No tMap, crie variáveis para armazenar o valor da linha anterior e da próxima linha usando Var.
+> Utilize rowX = rowX[-1] para simular o LAG e rowX = rowX[+1] para simular o LEAD.
+> 2. Usando o tDenormalize + tNormalize
+> Para simular LEAD, use tDenormalize para agrupar os valores desejados e depois tNormalize para expandir os registros, deslocando as colunas.
+> 3. Usando o tJavaFlex
+> Utilize uma variável de classe para armazenar valores anteriores e acessá-los na próxima iteração.
+
+
+Segundo o curso, isso é possíve no Talend pois há uma leitura inversa no campo das variaveis no tMap.
+![alt text](image-80.png)
+
+
+### Cancelando Job com tJava
+
+```java 
+output_row.id = input_row.id;
+output_row.name = input_row.name;
+if (null == input_row.country || input_row.country.equals("") || input_row.country.equals("N/A")) {
+	System.out.println("Id '" + input_row.id + "' has no valid country (" + input_row.country + ")");
+    // Neste ponto, posso gerar uma exceção e encerrar o job. 
+    // O numero pode ser qualquer um definido pelo usuario. (Tipo code error)
+	System.exit(99);
+} else {
+	output_row.country = input_row.country;
+}
+```
 
 ### Normalizar (tNormalized)
 
