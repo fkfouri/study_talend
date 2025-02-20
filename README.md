@@ -5,6 +5,7 @@
 - [Tutorial 🔜](components/Readme.md)
 - Material complementar PDF
     - [Talend.a_Advanced-Resources-File](Talend.a_Advanced-Resources-File.pdf)
+    - [Talend.b_Advanced-Resources-File](Talend.b_Advanced-Resources-File.pdf)
 
 ## Download
 
