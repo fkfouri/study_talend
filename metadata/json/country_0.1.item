@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendJSON:JSONFileConnection xmi:id="_REJfod2-Ee-a8ehM1xvluA" name="country" dataPackage="_REJfqN2-Ee-a8ehM1xvluA" JSONFilePath="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/country.json" Encoding="UTF-8" readbyMode="JSONPATH">
+  <TalendJSON:JSONFileConnection xmi:id="_REJfod2-Ee-a8ehM1xvluA" name="country" dataPackage="_REJfqN2-Ee-a8ehM1xvluA" JSONFilePath="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/country.json" Encoding="UTF-8" readbyMode="JSONPATH">
     <schema xmi:id="_REJfot2-Ee-a8ehM1xvluA" LimitBoucle="50" AbsoluteXPathQuery="$[*].currencies[*]">
       <schemaTargets xmi:id="_REJfo92-Ee-a8ehM1xvluA" RelativeXPathQuery="$[*].name" TagName="countryName"/>
       <schemaTargets xmi:id="_REJfpN2-Ee-a8ehM1xvluA" RelativeXPathQuery="$[*].topLevelDomain[*]" TagName="topLevelDomain"/>

@@ -1770,7 +1770,7 @@ public void talendStats_STATSProcess(final java.util.Map<String, Object> globalM
 		
 
 String fileName_talendStats_FILE = "";
-    fileName_talendStats_FILE = (new java.io.File("C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/logs"+ "/" +"stats_file.txt")).getAbsolutePath().replace("\\","/");
+    fileName_talendStats_FILE = (new java.io.File("C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/logs"+ "/" +"stats_file.txt")).getAbsolutePath().replace("\\","/");
     String fullName_talendStats_FILE = null;
     String extension_talendStats_FILE = null;
     String directory_talendStats_FILE = null;
@@ -2846,7 +2846,7 @@ public void talendLogs_LOGSProcess(final java.util.Map<String, Object> globalMap
 		
 
 String fileName_talendLogs_FILE = "";
-    fileName_talendLogs_FILE = (new java.io.File("C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/logs"+ "/" +"logs_file.txt")).getAbsolutePath().replace("\\","/");
+    fileName_talendLogs_FILE = (new java.io.File("C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/logs"+ "/" +"logs_file.txt")).getAbsolutePath().replace("\\","/");
     String fullName_talendLogs_FILE = null;
     String extension_talendLogs_FILE = null;
     String directory_talendLogs_FILE = null;
@@ -3991,7 +3991,7 @@ public void talendMeter_METTERProcess(final java.util.Map<String, Object> global
 		
 
 String fileName_talendMeter_FILE = "";
-    fileName_talendMeter_FILE = (new java.io.File("C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/logs"+ "/" +"meter_file.txt")).getAbsolutePath().replace("\\","/");
+    fileName_talendMeter_FILE = (new java.io.File("C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/logs"+ "/" +"meter_file.txt")).getAbsolutePath().replace("\\","/");
     String fullName_talendMeter_FILE = null;
     String extension_talendMeter_FILE = null;
     String directory_talendMeter_FILE = null;

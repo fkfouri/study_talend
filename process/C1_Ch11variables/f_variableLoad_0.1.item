@@ -229,7 +229,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSetGlobalVar_1" show="false"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;paramFile&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/params/context.csv&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/params/context.csv&quot;"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>

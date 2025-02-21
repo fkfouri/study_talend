@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWaitForFile_1" show="false"/>
     <elementParameter field="TEXT" name="WAIT" value="2"/>
     <elementParameter field="TEXT" name="MAX_ITERATIONS" value="5"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in&quot;"/>
     <elementParameter field="TEXT" name="FILEMASK" value="&quot;_&quot;"/>
     <elementParameter field="CHECK" name="INCLUDE_SUBDIR" value="false"/>
     <elementParameter field="CHECK" name="CASE_SENSITIVE" value="true"/>

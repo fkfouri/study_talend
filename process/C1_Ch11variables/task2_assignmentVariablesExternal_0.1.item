@@ -171,7 +171,7 @@
     <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="PROPERTIES_FORMAT"/>
     <elementParameter field="CLOSED_LIST" name="RETRIVE_MODE" value="RETRIVE_BY_SECTION" show="false"/>
     <elementParameter field="TEXT" name="SECTION_NAME" value="&quot;section&quot;" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/params/assignment.properties&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/params/assignment.properties&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -211,7 +211,7 @@
     <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="PROPERTIES_FORMAT"/>
     <elementParameter field="TEXT" name="SECTION_NAME" value="&quot;section&quot;" show="false"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/params/assignment.properties&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/params/assignment.properties&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -226,7 +226,7 @@
     <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="INI_FORMAT"/>
     <elementParameter field="TEXT" name="SECTION_NAME" value="&quot;section&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/params/assignment.ini&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/params/assignment.ini&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>

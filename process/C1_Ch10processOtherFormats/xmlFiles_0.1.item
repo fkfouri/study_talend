@@ -113,7 +113,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_f7cT8HNzEeulaf6rAvnLXw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_f7cT8HNzEeulaf6rAvnLXw - filmActorsSchema" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/film_actor.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/film_actor.xml&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/films/film/actors/actor&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="actor_id"/>

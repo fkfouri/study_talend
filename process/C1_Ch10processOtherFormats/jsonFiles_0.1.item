@@ -115,7 +115,7 @@
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0" show="false"/>
     <elementParameter field="CHECK" name="USEURL" value="false"/>
     <elementParameter field="TEXT" name="URLPATH" value="&quot;http://localhost:8080/JSON/JSON_file.txt&quot;" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/store.json&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/bills/bill/line&quot;" show="false"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;" show="false"/>
     <elementParameter field="TABLE" name="MAPPING">
@@ -220,8 +220,8 @@
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="CHECK" name="USEURL" value="false"/>
-    <elementParameter field="TEXT" name="URLPATH" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json&quot;" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json&quot;"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/store.json&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/store.json&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;$.store.goods.book[*]&quot;" show="false"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.store.goods.book[*]&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
@@ -326,8 +326,8 @@
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="CHECK" name="USEURL" value="false"/>
-    <elementParameter field="TEXT" name="URLPATH" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json&quot;" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/store.json&quot;"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/store.json&quot;" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/store.json&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;$.store.goods.book[*]&quot;" show="false"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.store.goods.book[*]&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">

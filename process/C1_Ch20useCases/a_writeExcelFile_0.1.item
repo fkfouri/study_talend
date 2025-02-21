@@ -10,7 +10,7 @@
     <contextParameter comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="params/" internalId="_PkqExsfBEe2PT52_Dwrqqg"/>
     <contextParameter comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="VAR central" internalId="_PkqEx8fBEe2PT52_Dwrqqg"/>
     <contextParameter comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="logs/" internalId="_PkqEyMfBEe2PT52_Dwrqqg"/>
-    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/" internalId="_PkqEycfBEe2PT52_Dwrqqg"/>
+    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/" internalId="_PkqEycfBEe2PT52_Dwrqqg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -125,7 +125,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_hAcUQGpLEeuT74Li4x2pGg - addressSchema" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/address7.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/address7.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>

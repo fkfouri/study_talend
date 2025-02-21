@@ -10,7 +10,7 @@
     <contextParameter comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="params/" internalId="_x575Rt_UEe-Ebay7FZ7KrA"/>
     <contextParameter comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="VAR central" internalId="_x575R9_UEe-Ebay7FZ7KrA"/>
     <contextParameter comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="logs/" internalId="_x575SN_UEe-Ebay7FZ7KrA"/>
-    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/" internalId="_x575Sd_UEe-Ebay7FZ7KrA"/>
+    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/" internalId="_x575Sd_UEe-Ebay7FZ7KrA"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>

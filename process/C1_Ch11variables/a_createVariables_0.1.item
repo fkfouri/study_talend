@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="FILENAME" prompt="FILENAME?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/in/labels.txt" internalId="_sbnR4KBsEeyhGYGOTWv97A"/>
+    <contextParameter comment="" name="FILENAME" prompt="FILENAME?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/in/labels.txt" internalId="_sbnR4KBsEeyhGYGOTWv97A"/>
     <contextParameter comment="" name="HEADER" prompt="HEADER?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" internalId="_sbnR4aBsEeyhGYGOTWv97A"/>
     <contextParameter comment="" name="FIELDSEPARATOR" prompt="FIELDSEPARATOR?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="|" internalId="_sbnR4qBsEeyhGYGOTWv97A"/>
   </context>

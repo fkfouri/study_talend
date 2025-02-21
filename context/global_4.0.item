@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
   <talendfile:ContextType xmi:id="_CJd7kNmSEeu-SNxzTMBVJA" confirmationNeeded="false" name="DEV">
-    <contextParameter xmi:id="_CJd7kdmSEeu-SNxzTMBVJA" comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/in/"/>
-    <contextParameter xmi:id="_CJd7ktmSEeu-SNxzTMBVJA" comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/logs/"/>
-    <contextParameter xmi:id="_CJd7k9mSEeu-SNxzTMBVJA" comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/out/"/>
-    <contextParameter xmi:id="_CJd7lNmSEeu-SNxzTMBVJA" comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/params/"/>
-    <contextParameter xmi:id="_CJd7ldmSEeu-SNxzTMBVJA" comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data_c2/tmp/"/>
+    <contextParameter xmi:id="_CJd7kdmSEeu-SNxzTMBVJA" comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data_c2/in/"/>
+    <contextParameter xmi:id="_CJd7ktmSEeu-SNxzTMBVJA" comment="" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data_c2/logs/"/>
+    <contextParameter xmi:id="_CJd7k9mSEeu-SNxzTMBVJA" comment="" name="outputDir" prompt="outputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data_c2/out/"/>
+    <contextParameter xmi:id="_CJd7lNmSEeu-SNxzTMBVJA" comment="" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data_c2/params/"/>
+    <contextParameter xmi:id="_CJd7ldmSEeu-SNxzTMBVJA" comment="" name="tmpDir" prompt="tmpDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data_c2/tmp/"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_CJd7nNmSEeu-SNxzTMBVJA" confirmationNeeded="false" name="TEST">
     <contextParameter xmi:id="_CJd7ndmSEeu-SNxzTMBVJA" comment="" name="inputDir" prompt="inputDir?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value=""/>

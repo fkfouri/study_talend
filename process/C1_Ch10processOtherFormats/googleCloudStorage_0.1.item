@@ -10,7 +10,7 @@
     <contextParameter comment="contains parameter files" name="paramDir" prompt="paramDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="params/" internalId="_Kr231lXIEe2rD5gjjbbQEA"/>
     <contextParameter comment="" name="central" prompt="central?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="VAR central" internalId="_Kr2311XIEe2rD5gjjbbQEA"/>
     <contextParameter comment="contains log files" name="logDir" prompt="logDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_String" value="logs/" internalId="_Kr232FXIEe2rD5gjjbbQEA"/>
-    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/TOS_DI-20211109_1610-V8.0.1/workspace/LOCAL_PROJECT/data/" internalId="_Kr232VXIEe2rD5gjjbbQEA"/>
+    <contextParameter comment="" name="_rootDir" prompt="_rootDir?" promptNeeded="false" repositoryContextId="_7T5HwINWEeu9Bs_jTpTwqg" type="id_Directory" value="C:/dev/SW/Talend/workspace/TALEND_UDEMY/data/" internalId="_Kr232VXIEe2rD5gjjbbQEA"/>
     <contextParameter comment="" name="bucketName" prompt="bucketName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_basics_files" internalId="_QIvP4FXLEe2rD5gjjbbQEA"/>
   </context>
   <parameters>
